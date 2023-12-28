@@ -1,0 +1,16 @@
+{
+  "cSpell.language": "en-GB",
+  "typescript.preferences.importModuleSpecifier": "project-relative",
+  "javascript.autoClosingTags": true,
+  "typescript.autoClosingTags": true,
+  "javascript.suggest.autoImports": true,
+  "typescript.suggest.autoImports": true,
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "explicit"
+  }
+}
