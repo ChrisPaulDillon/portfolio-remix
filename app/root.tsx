@@ -11,9 +11,9 @@ import {
   ScrollRestoration
 } from '@remix-run/react'
 import React, { useContext, useEffect } from 'react'
-
 import { ClientStyleContext, ServerStyleContext } from './context'
 import { AppBody } from './features/layout/AppBody'
+import theme from './theme/theme'
 
 export const meta: MetaFunction = () => [
   {
@@ -84,7 +84,7 @@ const Document = withEmotionCache(
 export default function App() {
   return (
     <Document>
-      <ChakraProvider>
+      <ChakraProvider theme={theme}>
         <AppBody>
           <Outlet />
         </AppBody>
