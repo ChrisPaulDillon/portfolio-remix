@@ -1,4 +1,5 @@
 import { Box, BoxProps, Flex, Stack, Text } from '@chakra-ui/react'
+import { ProfileAvatar } from '../shared/ProfileAvatar'
 import { SectionHeading } from '../shared/SectionHeading'
 
 interface AboutMeSectionProps extends BoxProps {}
@@ -24,7 +25,7 @@ export const AboutMeSection: React.FC<AboutMeSectionProps> = props => (
         psychology.
       </Text>
       <Flex justifyContent="center" pb={{ base: 4, sm: 4, lg: 0 }} w="100%">
-        {/* <ProfileAvatar /> */}
+        <ProfileAvatar />
       </Flex>
     </Stack>
   </Box>
