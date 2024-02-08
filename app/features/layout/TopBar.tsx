@@ -10,6 +10,7 @@ import {
 import { FiMenu } from 'react-icons/fi'
 import { useIsScrolling } from '../../hooks/useIsScrolling'
 import { ColorModeButton } from '../shared/ColorModeButton'
+import { Logo } from './Logo'
 import { NavItem } from './NavItem'
 import { NAV_LINKS } from './const'
 
@@ -38,7 +39,7 @@ export const TopBar: React.FC<BoxProps> = props => {
         {...props}
       >
         <Box mx={2} mr={4}>
-          {/* <Logo width={45} height={45} /> */}
+          <Logo width={45} height={45} />
         </Box>
 
         <Flex
