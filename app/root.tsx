@@ -18,7 +18,7 @@ import theme from './theme/theme'
 export const meta: MetaFunction = () => [
   {
     charset: 'utf-8',
-    title: 'New Remix App',
+    title: 'Chris Dillon - Full Stack Engineer',
     viewport: 'width=device-width,initial-scale=1'
   }
 ]
