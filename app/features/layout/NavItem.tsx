@@ -6,6 +6,7 @@ import {
   Text,
   useColorModeValue
 } from '@chakra-ui/react'
+import { NavLink } from '@remix-run/react'
 import { NavItemType } from './const'
 
 type NavItemProps = NavItemType & FlexProps
@@ -26,38 +27,43 @@ export const NavItem: React.FC<NavItemProps> = ({
   const bgColourHovered = useColorModeValue('whiteAlpha.600', 'blackAlpha.400')
 
   return (
-    // <Link href={href} passHref scroll={false}>
-    <ScaleFade initialScale={1} whileHover={{ scale: 1.1 }} in={true}>
-      <Flex
-        align="center"
-        px={3}
-        mx={1}
-        rounded="md"
-        py={1.5}
-        cursor="pointer"
-        _hover={{
-          bg: bgColourHovered,
-          color: 'whiteAlpha.400',
-          fontWeight: 'bold'
-        }}
-        role="group"
-        fontWeight={active ? 'bold' : 'semibold'}
-        transition=".15s ease"
-        onClick={onClose}
-        {...rest}
-      >
-        <Icon mr="2" boxSize="5" color="primary" as={icon} />
-        <Text
-          color={textColor}
-          textDecor={active ? 'underline' : 'none'}
-          textDecorationThickness="2px"
-          textUnderlineOffset={4.5}
-          fontWeight={{ base: 'semibold', lg: 'normal' }}
+    <NavLink
+      className={({ isActive, isPending }) =>
+        isActive ? 'active' : isPending ? 'pending' : ''
+      }
+      to={href}
+    >
+      <ScaleFade initialScale={1} whileHover={{ scale: 1.1 }} in={true}>
+        <Flex
+          align="center"
+          px={3}
+          mx={1}
+          rounded="md"
+          py={1.5}
+          cursor="pointer"
+          _hover={{
+            bg: bgColourHovered,
+            color: 'whiteAlpha.400',
+            fontWeight: 'bold'
+          }}
+          role="group"
+          fontWeight={active ? 'bold' : 'semibold'}
+          transition=".15s ease"
+          onClick={onClose}
+          {...rest}
         >
-          {label}
-        </Text>
-      </Flex>
-    </ScaleFade>
-    // </Link>
+          <Icon mr="2" boxSize="5" color="primary" as={icon} />
+          <Text
+            color={textColor}
+            textDecor={active ? 'underline' : 'none'}
+            textDecorationThickness="2px"
+            textUnderlineOffset={4.5}
+            fontWeight={{ base: 'semibold', lg: 'normal' }}
+          >
+            {label}
+          </Text>
+        </Flex>
+      </ScaleFade>
+    </NavLink>
   )
 }
