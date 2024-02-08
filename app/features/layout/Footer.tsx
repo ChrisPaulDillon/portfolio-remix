@@ -11,7 +11,6 @@ import {
   TextProps,
   VStack
 } from '@chakra-ui/react'
-import { AiOutlineMail } from 'react-icons/ai'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { GoLocation } from 'react-icons/go'
 import { NAV_LINKS } from './const'
@@ -79,7 +78,7 @@ export const Footer: React.FC<BoxProps> = props => {
             <FooterText>Scotland, United Kingdom</FooterText>
           </HStack>
           <HStack w="100%">
-            <Icon as={AiOutlineMail} />
+            {/* <Icon as={AiOutlineMail} /> //TODO */}
             <FooterText>chrispauldillon@live.com</FooterText>
           </HStack>
         </VStack>
