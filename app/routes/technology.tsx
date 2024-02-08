@@ -30,7 +30,7 @@ const TechnologyPage: React.FC = () => (
             {tech.title}
           </Text>
 
-          <Image src={tech.imgSrc} width={40} height={40} alt={tech.title} />
+          <Image src={tech.imgSrc} width={250} height={250} alt={tech.title} />
         </HStack>
       ))}
     </Flex>
