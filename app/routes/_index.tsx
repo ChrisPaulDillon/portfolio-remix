@@ -1,8 +1,9 @@
-import { Box, Flex, ScaleFade, VStack } from '@chakra-ui/react'
+import { Flex, VStack } from '@chakra-ui/react'
 import { useRef } from 'react'
 import { useInViewport } from 'react-in-viewport'
 import { AboutMeSection } from '../features/home/AboutMeSection'
 import { AcademicSection } from '../features/home/AcademicSection'
+import { ContactMeSection } from '../features/home/ContactMeSection'
 import { IntroSection } from '../features/home/IntroSection'
 import { PortfolioSection } from '../features/home/PortfolioSection'
 import { WorkExperienceSection } from '../features/home/WorkExperienceSection'
@@ -23,11 +24,7 @@ const Index = () => {
         <AcademicSection />
       </Flex>
       <PortfolioSection />
-      <Box w="100%">
-        <ScaleFade in={contactMeEnterCount > 0} initialScale={0.9}>
-          {/* <ContactMeSection ref={contactMeRef} /> */}
-        </ScaleFade>
-      </Box>
+      <ContactMeSection mb={5} />
     </VStack>
   )
 }
