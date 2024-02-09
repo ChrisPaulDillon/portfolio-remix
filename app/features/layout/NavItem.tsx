@@ -6,7 +6,7 @@ import {
   Text,
   useColorModeValue
 } from '@chakra-ui/react'
-import { NavLink } from '@remix-run/react'
+import { Link, useLocation } from '@remix-run/react'
 import { NavItemType } from './const'
 
 type NavItemProps = NavItemType & FlexProps
@@ -23,16 +23,12 @@ export const NavItem: React.FC<NavItemProps> = ({
     isScrolling ? 'white' : 'gray.600',
     'white'
   )
-  const active = false
-  const bgColourHovered = useColorModeValue('whiteAlpha.600', 'blackAlpha.400')
 
+  const bgColourHovered = useColorModeValue('whiteAlpha.600', 'blackAlpha.400')
+  const { pathname } = useLocation()
+  const active = pathname === href
   return (
-    <NavLink
-      className={({ isActive, isPending }) =>
-        isActive ? 'active' : isPending ? 'pending' : ''
-      }
-      to={href}
-    >
+    <Link to={href}>
       <ScaleFade initialScale={1} whileHover={{ scale: 1.1 }} in={true}>
         <Flex
           align="center"
@@ -64,6 +60,6 @@ export const NavItem: React.FC<NavItemProps> = ({
           </Text>
         </Flex>
       </ScaleFade>
-    </NavLink>
+    </Link>
   )
 }

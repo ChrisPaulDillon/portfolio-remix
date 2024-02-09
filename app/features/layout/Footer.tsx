@@ -11,24 +11,29 @@ import {
   TextProps,
   VStack
 } from '@chakra-ui/react'
+import { useLocation } from '@remix-run/react'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { GoLocation } from 'react-icons/go'
 import { NAV_LINKS } from './const'
 import { SocialButton } from './SocialButton'
 
-interface FooterTextProps extends TextProps {
-  isHighlighted?: boolean
-}
+const FooterText: React.FC<{ href?: string } & TextProps> = ({
+  href,
+  ...rest
+}) => {
+  const { pathname } = useLocation()
+  const isHighlighted = pathname === href
 
-const FooterText: React.FC<FooterTextProps> = ({ isHighlighted, ...rest }) => (
-  <Text
-    fontSize="sm"
-    w="100%"
-    lineHeight={6}
-    textDecor={isHighlighted ? 'underline' : 'inherit'}
-    {...rest}
-  />
-)
+  return (
+    <Text
+      fontSize="sm"
+      w="100%"
+      lineHeight={6}
+      textDecor={isHighlighted ? 'underline' : 'inherit'}
+      {...rest}
+    />
+  )
+}
 const FooterHeading: React.FC<HeadingProps> = props => (
   <Heading size="sm" w="100%" lineHeight={1.5} {...props} />
 )
@@ -63,7 +68,7 @@ export const Footer: React.FC<BoxProps> = props => {
           {NAV_LINKS.map(link => (
             <Box w="100%" key={link.label}>
               <Link href={link.href}>
-                <FooterText>{link.label}</FooterText>
+                <FooterText href={link.href}>{link.label}</FooterText>
               </Link>
             </Box>
           ))}
