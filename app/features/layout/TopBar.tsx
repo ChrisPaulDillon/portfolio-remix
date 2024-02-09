@@ -12,6 +12,7 @@ import { useIsScrolling } from '../../hooks/useIsScrolling'
 import { ColorModeButton } from '../shared/ColorModeButton'
 import { Logo } from './Logo'
 import { NavItem } from './NavItem'
+import { SideBarDrawer } from './SideBarDrawer'
 import { NAV_LINKS } from './const'
 
 export const TopBar: React.FC<BoxProps> = props => {
@@ -21,7 +22,7 @@ export const TopBar: React.FC<BoxProps> = props => {
   const scrollBgColour = useColorModeValue('gray.700', 'gray.700')
   return (
     <>
-      {/* <LazySideBarDrawer isOpen={isOpen} onClose={onClose} /> */}
+      <SideBarDrawer isOpen={isOpen} onClose={onClose} />
       <HStack
         as="header"
         position="fixed"
