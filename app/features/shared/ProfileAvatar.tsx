@@ -15,6 +15,7 @@ export const ProfileAvatar: React.FC<BoxProps> = props => (
       objectFit='cover'
       width={250}
       height={350}
+      loading='lazy'
     />
   </Box>
 )
