@@ -20,9 +20,10 @@ const TechnologyPage: React.FC = () => (
           boxShadow="rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px"
           overflow="hidden"
           rounded={5}
+          maxW='250px'
           p={3}
           m={2}
-          maxW="200px"
+
           justifyContent="space-between"
           alignContent="center"
         >
@@ -30,7 +31,7 @@ const TechnologyPage: React.FC = () => (
             {tech.title}
           </Text>
 
-          <Image src={tech.imgSrc} width={250} height={250} alt={tech.title} />
+          <Image src={tech.imgSrc} width={50} height={50}  objectFit='cover' alt={tech.title} />
         </HStack>
       ))}
     </Flex>

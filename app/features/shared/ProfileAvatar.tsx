@@ -12,6 +12,7 @@ export const ProfileAvatar: React.FC<BoxProps> = props => (
     <Image
       src="/images/chris.png"
       alt="Profile image"
+      objectFit='cover'
       width={250}
       height={350}
     />

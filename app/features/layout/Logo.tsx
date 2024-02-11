@@ -11,8 +11,7 @@ export const Logo: React.FC<LogoProps> = props => (
     <Image
       alt="logo"
       src="/images/logo.svg"
-      width={50}
-      height={50}
+      boxSize="sm"
       {...props}
     />
   </Link>
