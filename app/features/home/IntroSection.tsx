@@ -6,6 +6,7 @@ import {
   StackProps,
   VStack
 } from '@chakra-ui/react'
+import { Link } from '@remix-run/react'
 import React from 'react'
 import { ProgrammingCard } from '../../features/home/ProgrammingCard'
 import { HomeBodyText } from './HomeBodyText'
@@ -26,7 +27,7 @@ export const IntroSection: React.FC<StackProps> = props => (
       Full Stack Software Engineer
     </Heading>
 
-    <HomeBodyText w='full'>
+    <HomeBodyText w="full">
       I&apos;m a software engineer specializing in building (and occasionally
       designing) exceptional digital experiences.
     </HomeBodyText>
@@ -42,9 +43,9 @@ export const IntroSection: React.FC<StackProps> = props => (
     </Flex>
 
     <Box w="full" pt={4}>
-      {/* <NextLink href="/portfolio" scroll={false}> */}
-      <Button colorScheme="purple">My Portfolio</Button>
-      {/* </NextLink> */}
+      <Link to={'/portfolio'}>
+        <Button colorScheme="purple">My Portfolio</Button>
+      </Link>
     </Box>
   </VStack>
 )

@@ -38,9 +38,15 @@ export const WorkExperienceSection = () => {
             </StepIndicator>
 
             <Box flexShrink="0">
-              <StepTitle as={HomeBodyText}>{step.companyName}</StepTitle>
-              <StepDescription as={HomeBodyText}>{step.role}</StepDescription>
-              <StepDescription as={HomeBodyText}>{step.date}</StepDescription>
+              <StepTitle as={HomeBodyText} textAlign="left">
+                {step.companyName}
+              </StepTitle>
+              <StepDescription as={HomeBodyText} textAlign="left">
+                {step.role}
+              </StepDescription>
+              <StepDescription as={HomeBodyText} textAlign="left">
+                {step.date}
+              </StepDescription>
             </Box>
 
             <StepSeparator />

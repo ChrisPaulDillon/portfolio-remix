@@ -59,9 +59,15 @@ export const AcademicSection = () => {
             </StepIndicator>
 
             <Box flexShrink="0">
-              <StepTitle as={HomeBodyText}>{step.title}</StepTitle>
-              <StepDescription as={HomeBodyText}>{step.description}</StepDescription>
-              <StepDescription as={HomeBodyText}>{step.date}</StepDescription>
+              <StepTitle as={HomeBodyText} textAlign="left">
+                {step.title}
+              </StepTitle>
+              <StepDescription as={HomeBodyText} textAlign="left">
+                {step.description}
+              </StepDescription>
+              <StepDescription as={HomeBodyText} textAlign="left">
+                {step.date}
+              </StepDescription>
             </Box>
 
             <StepSeparator />
