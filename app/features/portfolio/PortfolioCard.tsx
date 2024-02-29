@@ -1,9 +1,9 @@
 import {
-  BoxProps,
   Card,
   CardBody,
   CardFooter,
   CardHeader,
+  CardProps,
   Flex,
   Heading,
   Icon,
@@ -16,8 +16,7 @@ import { BsFolderFill, BsThreeDotsVertical } from 'react-icons/bs'
 import { HomeBodyText } from '../home/HomeBodyText'
 import { PortfolioLinkItem, ProjectCategories } from './const'
 
-export interface PortfolioCardProps extends Omit<BoxProps, 'id'> {
-  id: number
+export interface PortfolioCardProps extends Omit<CardProps, 'id'> {
   title: string
   description: string
   extendedDescription: string
@@ -29,11 +28,12 @@ export const PortfolioCard: React.FC<PortfolioCardProps> = ({
   title,
   description,
   linkItems,
-  categories
+  categories,
+  ...rest
 }) => {
   const linkItem = linkItems[0]
   return (
-    <Card maxW={{ base: 'xl', lg: 'lg' }} mx={1} my={2}>
+    <Card maxW={{ base: 'xl', sm: 'xl', lg: 'lg' }} mx={1} my={2} {...rest}>
       <CardHeader>
         <Flex>
           <Flex flex="1" gap="4" alignItems="center" flexWrap="wrap">
