@@ -7,7 +7,11 @@ import { SectionHeading } from '../features/shared/SectionHeading'
 const PortfolioPage = () => (
   <PageContainer>
     <SectionHeading>Portfolio</SectionHeading>
-    <Flex flexDir={'row'} flexWrap={'wrap'}>
+    <Flex
+      flexDir={'row'}
+      flexWrap={'wrap'}
+      justifyContent={{ base: 'center', lg: 'left' }}
+    >
       {PORTFOLIO_ITEMS.map(item => (
         <PortfolioCard key={item.title} {...item} />
       ))}

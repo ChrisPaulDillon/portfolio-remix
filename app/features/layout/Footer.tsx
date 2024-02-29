@@ -27,7 +27,7 @@ const FooterText: React.FC<{ href?: string } & TextProps> = ({
 
   return (
     <Text
-      fontSize="sm"
+      fontSize="md"
       w="100%"
       lineHeight={6}
       textDecor={isHighlighted ? 'underline' : 'inherit'}
@@ -36,7 +36,7 @@ const FooterText: React.FC<{ href?: string } & TextProps> = ({
   )
 }
 const FooterHeading: React.FC<HeadingProps> = props => (
-  <Heading size="sm" w="100%" lineHeight={1.5} {...props} />
+  <Heading size="lg" w="100%" lineHeight={1.5} {...props} />
 )
 
 export const Footer: React.FC<BoxProps> = props => {
@@ -65,7 +65,7 @@ export const Footer: React.FC<BoxProps> = props => {
           textAlign={{ base: 'center', sm: 'center', md: 'left', lg: 'left' }}
           w="fill"
         >
-          <FooterHeading size="sm">Browse</FooterHeading>
+          <FooterHeading>Browse</FooterHeading>
           {NAV_LINKS.map(link => (
             <Box w="100%" key={link.label}>
               <Link href={link.href}>
@@ -89,7 +89,7 @@ export const Footer: React.FC<BoxProps> = props => {
           </HStack>
         </VStack>
         <VStack py={{ base: 10, sm: 10, md: 0, lg: 0 }}>
-          <FooterHeading size="sm">Relevant Links</FooterHeading>
+          <FooterHeading>Relevant Links</FooterHeading>
           <HStack>
             <SocialButton
               label={'Github'}

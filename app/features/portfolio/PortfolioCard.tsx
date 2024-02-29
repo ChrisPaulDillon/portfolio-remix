@@ -1,5 +1,4 @@
 import {
-  Box,
   BoxProps,
   Card,
   CardBody,
@@ -40,10 +39,13 @@ export const PortfolioCard: React.FC<PortfolioCardProps> = ({
           <Flex flex="1" gap="4" alignItems="center" flexWrap="wrap">
             <Icon as={BsFolderFill} h="20px" w="40px" color="red" />
 
-            <Box>
-              <Heading size="lg">{title}</Heading>
-              {/* <Text>{description}</Text> */}
-            </Box>
+            <Heading
+              size={{ base: 'xl', lg: 'lg' }}
+              textAlign={{ base: 'center', lg: 'left' }}
+            >
+              {title}
+            </Heading>
+            {/* <Text>{description}</Text> */}
           </Flex>
           <Icon color="gray" as={BsThreeDotsVertical} />
         </Flex>
