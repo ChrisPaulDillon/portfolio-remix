@@ -1,10 +1,10 @@
 import { extendTheme } from '@chakra-ui/react'
-import { mode } from '@chakra-ui/theme-tools'
+import { StyleFunctionProps, mode } from '@chakra-ui/theme-tools'
 import { components } from './components'
 import { semanticTokens } from './semanticTokens'
 
 const styles = {
-  global: props => ({
+  global: (props: Record<string, any> | StyleFunctionProps) => ({
     body: {
       bg: mode('#f0e7db', '#202023')(props)
     }
@@ -12,7 +12,7 @@ const styles = {
 }
 
 const fonts = {
-  heading: `'roboto', sans-serif`
+  heading: `'Rubik', sans-serif`
 }
 
 const colors = {

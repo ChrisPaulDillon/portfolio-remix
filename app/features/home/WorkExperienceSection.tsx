@@ -11,6 +11,7 @@ import {
 import { MdWork } from 'react-icons/md'
 import { SectionHeading } from '../shared/SectionHeading'
 import { WORK_EXPERIENCE_DATA } from '../work-experience/const'
+import { HomeBodyText } from './HomeBodyText'
 
 export const WorkExperienceSection = () => {
   return (
@@ -37,9 +38,9 @@ export const WorkExperienceSection = () => {
             </StepIndicator>
 
             <Box flexShrink="0">
-              <StepTitle>{step.companyName}</StepTitle>
-              <StepDescription>{step.role}</StepDescription>
-              <StepDescription>{step.date}</StepDescription>
+              <StepTitle as={HomeBodyText}>{step.companyName}</StepTitle>
+              <StepDescription as={HomeBodyText}>{step.role}</StepDescription>
+              <StepDescription as={HomeBodyText}>{step.date}</StepDescription>
             </Box>
 
             <StepSeparator />

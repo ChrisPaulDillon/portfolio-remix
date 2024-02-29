@@ -10,6 +10,7 @@ import {
 } from '@chakra-ui/react'
 import { HiAcademicCap } from 'react-icons/hi'
 import { SectionHeading } from '../shared/SectionHeading'
+import { HomeBodyText } from './HomeBodyText'
 
 const steps = [
   {
@@ -58,9 +59,9 @@ export const AcademicSection = () => {
             </StepIndicator>
 
             <Box flexShrink="0">
-              <StepTitle>{step.title}</StepTitle>
-              <StepDescription>{step.description}</StepDescription>
-              <StepDescription>{step.date}</StepDescription>
+              <StepTitle as={HomeBodyText}>{step.title}</StepTitle>
+              <StepDescription as={HomeBodyText}>{step.description}</StepDescription>
+              <StepDescription as={HomeBodyText}>{step.date}</StepDescription>
             </Box>
 
             <StepSeparator />

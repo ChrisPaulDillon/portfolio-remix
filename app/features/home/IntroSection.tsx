@@ -4,11 +4,11 @@ import {
   Flex,
   Heading,
   StackProps,
-  Text,
   VStack
 } from '@chakra-ui/react'
 import React from 'react'
 import { ProgrammingCard } from '../../features/home/ProgrammingCard'
+import { HomeBodyText } from './HomeBodyText'
 
 export const IntroSection: React.FC<StackProps> = props => (
   <VStack
@@ -26,10 +26,10 @@ export const IntroSection: React.FC<StackProps> = props => (
       Full Stack Software Engineer
     </Heading>
 
-    <Text w="inherit">
+    <HomeBodyText w='full'>
       I&apos;m a software engineer specializing in building (and occasionally
       designing) exceptional digital experiences.
-    </Text>
+    </HomeBodyText>
     <Flex
       pt={2}
       w="full"
