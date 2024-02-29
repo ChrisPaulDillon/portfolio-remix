@@ -79,7 +79,7 @@ export const TopBar: React.FC<BoxProps> = props => {
             }}
             onClick={onOpen}
             icon={<FiMenu />}
-            size="sm"
+            size="lg"
           />
         </Box>
       </HStack>

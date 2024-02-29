@@ -28,6 +28,7 @@ export const ColorModeButton: React.FC<Omit<IconButtonProps, 'aria-label'>> = ({
           icon={useColorModeValue(<MoonIcon />, <SunIcon />)}
           onClick={() => toggleColorMode()}
           variant="ghost"
+          size="lg"
           {...rest}
         ></IconButton>
       </motion.div>
