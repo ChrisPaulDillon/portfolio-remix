@@ -1,6 +1,6 @@
 import { Box, BoxProps, Flex } from '@chakra-ui/react'
 import { MutableRefObject, forwardRef } from 'react'
-import { PortfolioItem } from '../portfolio/PortfolioItem'
+import { PortfolioCard } from '../portfolio/PortfolioCard'
 import { PORTFOLIO_ITEMS } from '../portfolio/const'
 import { SectionHeading } from '../shared/SectionHeading'
 import { HomeBodyText } from './HomeBodyText'
@@ -12,9 +12,9 @@ export const PortfolioSection = forwardRef<MutableRefObject<null>, BoxProps>(
       <HomeBodyText>
         Here is just some of the cool projects I&apos;ve worked on
       </HomeBodyText>
-      <Flex flexDir={'row'} flexWrap={'wrap'} justifyContent="center">
+      <Flex flexDir={'row'} flexWrap={'wrap'}>
         {PORTFOLIO_ITEMS.map(item => (
-          <PortfolioItem key={item.title} {...item} />
+          <PortfolioCard key={item.title} {...item} />
         ))}
       </Flex>
     </Box>

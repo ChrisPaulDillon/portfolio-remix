@@ -1,4 +1,4 @@
-import { PortfolioItemProps } from './PortfolioItem'
+import { PortfolioCardProps } from './PortfolioCard'
 
 export type ProjectCategories =
   | 'Python'
@@ -13,7 +13,7 @@ export type ProjectCategories =
   | 'Chakra UI'
   | 'Web Scraping'
   | 'Data Analysis'
-  | 'Redux.js'
+  | 'Redux'
   | 'Coingecko API'
 
 export interface PortfolioLinkItem {
@@ -21,7 +21,7 @@ export interface PortfolioLinkItem {
   linkText: string
 }
 
-export const PORTFOLIO_ITEMS: Array<PortfolioItemProps> = [
+export const PORTFOLIO_ITEMS: PortfolioCardProps[] = [
   {
     id: 1,
     title: 'ZumoSwap',
@@ -35,18 +35,11 @@ export const PORTFOLIO_ITEMS: Array<PortfolioItemProps> = [
         linkUrl: 'https://github.com/ChrisPaulDillon/ZumoDEX'
       }
     ],
-    categories: [
-      'Solidity',
-      'React',
-      'Web3',
-      'Ethers.js',
-      'Redux.js',
-      'Chakra UI'
-    ]
+    categories: ['Solidity', 'React', 'Web3', 'Ethers.js', 'Redux', 'Chakra UI']
   },
   {
     id: 2,
-    title: 'Cryptocurrency Trading Bot',
+    title: 'Crypto Trading Bot',
     description:
       'Polls various cryptocurrency exchanges and once a new coin listing has been announced, purchases on the GateIO exchange. Also announces on Discord.',
     extendedDescription:
@@ -92,7 +85,7 @@ export const PORTFOLIO_ITEMS: Array<PortfolioItemProps> = [
         linkUrl: 'https://github.com/ChrisPaulDillon/PowerBuddy.API'
       }
     ],
-    categories: ['React', 'Redux.js', 'C#', 'Chakra UI']
+    categories: ['React', 'Redux', 'C#', 'Chakra UI']
   },
   {
     id: 5,

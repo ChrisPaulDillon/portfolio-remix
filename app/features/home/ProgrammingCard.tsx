@@ -1,5 +1,6 @@
-import { Box, HStack, Icon, StackProps, Text } from '@chakra-ui/react'
+import { Box, HStack, Icon, StackProps } from '@chakra-ui/react'
 import { FaCode } from 'react-icons/fa'
+import { HomeBodyText } from './HomeBodyText'
 
 interface ProgrammingCardProps extends StackProps {
   label: string
@@ -24,9 +25,9 @@ export const ProgrammingCard: React.FC<ProgrammingCardProps> = ({
       <Box mt={1}>
         <Icon as={FaCode} />
       </Box>
-      <Text color="faded" fontSize="xs" fontWeight="bold" px={1}>
+      <HomeBodyText color="faded" fontSize="xs" fontWeight="bold" px={1}>
         {label}
-      </Text>
+      </HomeBodyText>
     </HStack>
   )
 }
