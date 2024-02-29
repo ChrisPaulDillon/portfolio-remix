@@ -7,7 +7,7 @@ export const SectionHeading: React.FC<HeadingProps> = props => (
     as="h2"
     textUnderlineOffset={10}
     textAlign={{ base: 'center', sm: 'center', lg: 'left' }}
-    fontSize={{ base: '3xl', sm: '3xl', lg: '4xl' }}
+    fontSize={{ base: '4xl', sm: '4xl', lg: '4xl' }}
     {...props}
   />
 )
