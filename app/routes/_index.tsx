@@ -16,7 +16,7 @@ const Index = () => {
   })
 
   return (
-    <VStack justifyContent="space-between" spacing="14" pt={20}>
+    <VStack justifyContent="space-between" spacing="14" pt={20} mx={{base: 10}}>
       <IntroSection />
       <AboutMeSection />
       <Flex flexDir={{ base: 'column', lg: 'row' }} w="100%">

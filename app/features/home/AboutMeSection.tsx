@@ -8,7 +8,7 @@ export const AboutMeSection: React.FC<AboutMeSectionProps> = props => (
   <Box as="section">
     <SectionHeading>About Me</SectionHeading>
     <Stack direction={{ base: 'column', lg: 'row' }} w="100%" {...props}>
-      <Text textAlign={{ base: 'center', lg: 'left' }}>
+      <Text textAlign={{ base: 'center', lg: 'left' }} fontSize={{base: 'lg'}}>
         Hello! My name is Chris and I have a passionate for designing and
         developing technology. I started programming at the young age of 14,
         creating scripts for the popular online MMORPG game called RuneScape.
