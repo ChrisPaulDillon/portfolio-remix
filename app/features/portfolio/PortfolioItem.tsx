@@ -8,13 +8,13 @@ import {
   ScaleFade,
   Text
 } from '@chakra-ui/react'
+import { Link } from '@remix-run/react'
 import { BsFolderFill } from 'react-icons/bs'
 import { PortfolioLinkItem, ProjectCategories } from './const'
 import { PortfolioGitHubTag } from './PortfolioGitHubTag'
 import { PortfolioTag } from './PortfolioTag'
 
-export interface PortfolioItemProps extends Omit<BoxProps, 'id'> {
-  id: number
+export interface PortfolioItemProps extends BoxProps {
   title: string
   description: string
   extendedDescription: string
@@ -49,7 +49,7 @@ export const PortfolioItem: React.FC<PortfolioItemProps> = ({
             <PortfolioGitHubTag key={idx} {...item} />
           ))}
         </HStack>
-        <a href={`portfolio/${id}`}>
+        <Link to={`portfolio/${id}`}>
           <Box p={2}>
             <Heading
               fontWeight="semibold"
@@ -62,7 +62,7 @@ export const PortfolioItem: React.FC<PortfolioItemProps> = ({
             </Heading>
             <Text textAlign="left">{description}</Text>
           </Box>
-        </a>
+        </Link>
         <Box mb={1}>
           {categories?.map((item, idx) => (
             <PortfolioTag key={idx}>{item}</PortfolioTag>
