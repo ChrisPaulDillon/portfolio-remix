@@ -8,11 +8,6 @@ interface LogoProps {
 
 export const Logo: React.FC<LogoProps> = props => (
   <Link to="/">
-    <Image
-      alt="logo"
-      src="/images/logo.svg"
-      boxSize="sm"
-      {...props}
-    />
+    <Image alt="logo" src="/images/logo.svg" boxSize="xl" {...props} />
   </Link>
 )

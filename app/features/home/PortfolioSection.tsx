@@ -12,7 +12,11 @@ export const PortfolioSection = forwardRef<MutableRefObject<null>, BoxProps>(
       <HomeBodyText>
         Here is just some of the cool projects I&apos;ve worked on
       </HomeBodyText>
-      <Flex flexDir={'row'} flexWrap={'wrap'}>
+      <Flex
+        flexDir={'row'}
+        flexWrap={'wrap'}
+        justifyContent={{ base: 'center', lg: 'left' }}
+      >
         {PORTFOLIO_ITEMS.map(item => (
           <PortfolioCard key={item.title} {...item} />
         ))}

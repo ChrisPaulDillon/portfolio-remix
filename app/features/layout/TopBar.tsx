@@ -31,6 +31,7 @@ export const TopBar: React.FC<BoxProps> = props => {
         py={1}
         boxShadow="lg"
         w="full"
+        minH="65px"
         borderColor="border"
         alignContent="space-between"
         justifyContent="space-between"
