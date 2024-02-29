@@ -29,7 +29,7 @@ export const ContactFormContainer = () => {
         <form onSubmit={handleSubmit(handleFormSubmit)}>
           <VStack spacing={5}>
             <FormControl isRequired>
-              <FormLabel>Your Name</FormLabel>
+              <FormLabel fontSize="xl">Your Name</FormLabel>
               <InputGroup borderColor="#E0E1E7">
                 <InputLeftElement pointerEvents="none">
                   <BsPerson color="gray.800" />
@@ -42,7 +42,7 @@ export const ContactFormContainer = () => {
               </InputGroup>
             </FormControl>
             <FormControl isRequired>
-              <FormLabel>Subject</FormLabel>
+              <FormLabel fontSize="xl">Subject</FormLabel>
               <InputGroup borderColor="#E0E1E7">
                 <InputLeftElement pointerEvents="none">
                   <MdOutlineEmail color="gray.800" />
@@ -55,7 +55,7 @@ export const ContactFormContainer = () => {
               </InputGroup>
             </FormControl>
             <FormControl isRequired>
-              <FormLabel>Message</FormLabel>
+              <FormLabel fontSize="xl">Message</FormLabel>
               <Textarea
                 borderColor="gray.300"
                 placeholder="message"

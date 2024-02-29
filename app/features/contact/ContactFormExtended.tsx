@@ -4,7 +4,6 @@ import {
   Flex,
   HStack,
   IconButton,
-  Text,
   VStack,
   useColorModeValue
 } from '@chakra-ui/react'
@@ -12,6 +11,7 @@ import { Link } from '@remix-run/react'
 import { BsGithub } from 'react-icons/bs'
 import { FaLinkedin } from 'react-icons/fa'
 import { MdEmail, MdLocationOn } from 'react-icons/md'
+import { HomeBodyText } from '../home/HomeBodyText'
 import { SectionHeading } from '../shared/SectionHeading'
 import { ContactFormContainer } from './ContactFormContainer'
 
@@ -29,13 +29,12 @@ export const ContactFormExtended = () => {
       <Flex flexDir={{ base: 'column', lg: 'row' }}>
         <Box minW="300px" mt={{ base: 5, lg: 1 }}>
           <SectionHeading>Contact</SectionHeading>
-          <Text
+          <HomeBodyText
             mt={{ sm: 3, md: 3, lg: 5 }}
             textAlign={{ base: 'center', lg: 'left' }}
-            color="gray.500"
           >
             Please fill out the contact form
-          </Text>
+          </HomeBodyText>
           <Box py={{ base: 5, sm: 5, md: 8, lg: 10 }}>
             <VStack pl={0} spacing={3} alignItems="flex-start">
               <Button
@@ -47,7 +46,7 @@ export const ContactFormExtended = () => {
                 _hover={{ border: '2px solid purple' }}
                 leftIcon={<MdEmail color="red" size="20px" />}
               >
-                chrispauldillon@live.com
+                <HomeBodyText>chrispauldillon@live.com</HomeBodyText>
               </Button>
 
               <Button
@@ -59,7 +58,7 @@ export const ContactFormExtended = () => {
                 _hover={{ border: '2px solid purple' }}
                 leftIcon={<MdLocationOn color="red" size="20px" />}
               >
-                Scotland, United Kingdom
+                <HomeBodyText>Scotland, United Kingdom</HomeBodyText>
               </Button>
             </VStack>
           </Box>
