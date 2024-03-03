@@ -33,7 +33,13 @@ export const PortfolioCard: React.FC<PortfolioCardProps> = ({
 }) => {
   const linkItem = linkItems[0]
   return (
-    <Card maxW={{ base: 'xl', sm: 'xl', lg: 'lg' }} mx={1} my={2} {...rest}>
+    <Card
+      // maxW={{ base: '2xl', sm: 'xl', lg: 'lg' }}
+      w={{ base: 'full', lg: '45%' }}
+      mx={1}
+      my={2}
+      {...rest}
+    >
       <CardHeader>
         <Flex>
           <Flex flex="1" gap="4" alignItems="center" flexWrap="wrap">

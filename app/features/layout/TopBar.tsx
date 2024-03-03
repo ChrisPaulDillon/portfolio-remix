@@ -31,7 +31,7 @@ export const TopBar: React.FC<BoxProps> = props => {
         py={1}
         boxShadow="lg"
         w="full"
-        minH="65px"
+        minH="80px"
         borderColor="border"
         alignContent="space-between"
         justifyContent="space-between"
@@ -41,7 +41,7 @@ export const TopBar: React.FC<BoxProps> = props => {
         {...props}
       >
         <Box mx={2} mr={4}>
-          <Logo width={45} height={45} />
+          <Logo />
         </Box>
 
         <Flex
