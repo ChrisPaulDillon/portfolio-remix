@@ -9,22 +9,16 @@ export type WorkExperienceData = {
 export const WORK_EXPERIENCE_DATA: WorkExperienceData[] = [
   {
     companyName: 'Serial Affinity',
-    role: 'Full Stack Engineer',
+    role: 'Senior Full Stack Engineer',
     techStack: ['React', 'TypeScript', 'Node.js', 'GraphQL', 'PostgreSQL'],
     description: 'Test test test',
-    date: 'June 2022 - Present'
-  },
-  {
-    companyName: 'Newcastle University',
-    role: 'Demonstrator',
-    description: 'Test test test',
-    date: 'September 2021 - May 2022'
+    date: 'June 2024 - Present'
   },
   {
     companyName: 'Serial Affinity',
     role: 'Full Stack Engineer',
     description: 'Test test test',
-    date: 'March 2020 - June 2021'
+    date: 'March 2020 - June 2024'
   },
   {
     companyName: 'My1Login',
