@@ -14,11 +14,6 @@ import { HomeBodyText } from './HomeBodyText'
 
 const steps = [
   {
-    title: 'MPhil Blockchain Technology',
-    description: 'Newcastle University',
-    date: '2021 - 2022'
-  },
-  {
     title: 'MSc Big Data Technologies',
     description: 'Glasgow Caledonian University',
     date: '2018 - 2019'
