@@ -16,17 +16,17 @@ const steps = [
   {
     title: 'MSc Big Data Technologies',
     description: 'Glasgow Caledonian University',
-    date: '2018 - 2019'
+    date: '2016 - 2017'
   },
   {
     title: 'BSc Computer Science',
     description: 'Glasgow Caledonian University',
-    date: '2016 - 2018'
+    date: '2014 - 2016'
   },
   {
     title: 'HND Software Development',
     description: 'City of Glasgow College',
-    date: '2013 - 2015'
+    date: '2012 - 2014'
   }
 ]
 
