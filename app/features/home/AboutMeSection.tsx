@@ -13,15 +13,9 @@ export const AboutMeSection: React.FC<AboutMeSectionProps> = props => (
         Hello! My name is Chris and I have a passionate for designing and
         developing technology. I started programming at the young age of 14,
         creating scripts for the popular online MMORPG game called RuneScape.
-        <br />
-        <br />
-        More recently, I achieved a Masters in Big Data Technologies and
-        progressed onto a <strong>PhD programme</strong> in Blockchain
-        Technology. Fast forward to today, I am a seasoned Software Engineer
-        with a huge range of skills including full stack development, creation
-        of agents, data analysis and mobile development.
+        I am a Senior Software Engineer with my predominant languages being C#, Go, React & TypeScript.
         <br /> <br />
-        In my spare time, I love keeping fit and going to the gym. I am also an
+        In my spare time, I enjoy keeping fit and going to the gym. I am also an
         avid reader and study many topics such as programming, neuroscience and
         psychology.
       </HomeBodyText>
