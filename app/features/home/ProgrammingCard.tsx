@@ -1,4 +1,4 @@
-import { Box, HStack, Icon, StackProps } from '@chakra-ui/react'
+import { Box, HStack, Icon, StackProps, useColorModeValue } from '@chakra-ui/react'
 import { FaCode } from 'react-icons/fa'
 import { HomeBodyText } from './HomeBodyText'
 
@@ -13,19 +13,33 @@ export const ProgrammingCard: React.FC<ProgrammingCardProps> = ({
   return (
     <HStack
       justifyContent="center"
-      alignContent="center"
+      alignItems="center"
       border="1px"
-      borderRadius={20}
-      borderColor="red"
-      color="secondary"
-      mx={1}
-      w="125px"
+      borderRadius="full"
+      borderColor={useColorModeValue('red.200', 'red.500')}
+      bg={useColorModeValue('whiteAlpha.800', 'whiteAlpha.100')}
+      px={4}
+      py={2}
+      m={1}
+      transition="all 0.3s"
+      _hover={{
+        transform: 'translateY(-2px)',
+        borderColor: useColorModeValue('red.400', 'red.300'),
+        boxShadow: 'md'
+      }}
       {...rest}
     >
-      <Box mt={1}>
-        <Icon as={FaCode} />
-      </Box>
-      <HomeBodyText color="faded" fontSize="xs" fontWeight="bold" px={1}>
+      <Icon 
+        as={FaCode} 
+        color={useColorModeValue('red.500', 'red.300')}
+        boxSize={4}
+      />
+      <HomeBodyText
+        color={useColorModeValue('gray.700', 'gray.200')}
+        fontSize={{ base: 'sm', md: 'md' }}
+        fontWeight="medium"
+        m={0}
+      >
         {label}
       </HomeBodyText>
     </HStack>

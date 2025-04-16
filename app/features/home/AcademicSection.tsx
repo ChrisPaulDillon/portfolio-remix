@@ -1,74 +1,107 @@
 import {
   Box,
-  Step,
-  StepDescription,
-  StepIndicator,
-  StepSeparator,
-  StepStatus,
-  StepTitle,
-  Stepper
+  Card,
+  CardBody,
+  CardHeader,
+  Flex,
+  Heading,
+  Icon,
+  Stack,
+  Text,
+  useColorModeValue
 } from '@chakra-ui/react'
 import { HiAcademicCap } from 'react-icons/hi'
 import { SectionHeading } from '../shared/SectionHeading'
-import { HomeBodyText } from './HomeBodyText'
 
-const steps = [
+const academicHistory = [
   {
-    title: 'MSc Big Data Technologies',
-    description: 'Glasgow Caledonian University',
+    degree: 'MSc Big Data Technologies',
+    institution: 'Glasgow Caledonian University',
     date: '2016 - 2017'
   },
   {
-    title: 'BSc Computer Science',
-    description: 'Glasgow Caledonian University',
+    degree: 'BSc Computer Science',
+    institution: 'Glasgow Caledonian University',
     date: '2014 - 2016'
   },
   {
-    title: 'HND Software Development',
-    description: 'City of Glasgow College',
+    degree: 'HND Software Development',
+    institution: 'City of Glasgow College',
     date: '2012 - 2014'
   }
 ]
 
 export const AcademicSection = () => {
+  const cardBg = useColorModeValue('white', 'gray.800')
+  const borderColor = useColorModeValue('red.100', 'red.700')
+  const iconBg = useColorModeValue('red.50', 'red.900')
+  const iconColor = useColorModeValue('red.500', 'red.200')
+  const institutionColor = useColorModeValue('gray.600', 'gray.400')
+  
   return (
     <Box w="100%">
       <SectionHeading>Academic Achievements</SectionHeading>
-      <Stepper
-        index={5}
-        justifyContent="center"
-        alignContent="center"
-        colorScheme="purple"
-        orientation="vertical"
-        mt={5}
-        px={{ base: 18, sm: 0, lg: 0 }}
-      >
-        {steps.map((step, index) => (
-          <Step key={index}>
-            <StepIndicator>
-              <StepStatus
-                complete={<HiAcademicCap />}
-                incomplete={<HiAcademicCap />}
-                active={<HiAcademicCap />}
-              />
-            </StepIndicator>
-
-            <Box flexShrink="0">
-              <StepTitle as={HomeBodyText} textAlign="left">
-                {step.title}
-              </StepTitle>
-              <StepDescription as={HomeBodyText} textAlign="left">
-                {step.description}
-              </StepDescription>
-              <StepDescription as={HomeBodyText} textAlign="left">
-                {step.date}
-              </StepDescription>
-            </Box>
-
-            <StepSeparator />
-          </Step>
+      <Stack spacing={4} mt={6}>
+        {academicHistory.map((education, index) => (
+          <Card
+            key={index}
+            bg={cardBg}
+            borderWidth="1px"
+            borderColor={borderColor}
+            borderRadius="xl"
+            overflow="hidden"
+            transition="all 0.3s"
+            _hover={{
+              transform: 'translateY(-2px)',
+              boxShadow: 'lg',
+              borderColor: useColorModeValue('red.300', 'red.500')
+            }}
+          >
+            <CardHeader pb={2}>
+              <Flex align="center" gap={4}>
+                <Box
+                  p={2}
+                  borderRadius="lg"
+                  bg={iconBg}
+                >
+                  <Icon 
+                    as={HiAcademicCap} 
+                    boxSize={5}
+                    color={iconColor}
+                  />
+                </Box>
+                <Box>
+                  <Heading
+                    size="md"
+                    bgGradient={useColorModeValue(
+                      'linear(to-r, red.600, purple.500)',
+                      'linear(to-r, red.200, purple.200)'
+                    )}
+                    bgClip="text"
+                  >
+                    {education.degree}
+                  </Heading>
+                  <Text
+                    fontSize="sm"
+                    color={institutionColor}
+                    mt={1}
+                  >
+                    {education.date}
+                  </Text>
+                </Box>
+              </Flex>
+            </CardHeader>
+            <CardBody pt={0}>
+              <Text
+                fontSize="md"
+                color={useColorModeValue('gray.700', 'gray.300')}
+              >
+                {education.institution}
+              </Text>
+            </CardBody>
+          </Card>
         ))}
-      </Stepper>
+      </Stack>
     </Box>
   )
 }

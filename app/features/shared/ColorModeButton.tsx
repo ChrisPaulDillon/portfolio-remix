@@ -17,21 +17,30 @@ export const ColorModeButton: React.FC<Omit<IconButtonProps, 'aria-label'>> = ({
       <motion.div
         style={{ display: 'inline-block' }}
         key={useColorModeValue('light', 'dark')}
-        initial={{ y: -20, opacity: 0 }}
+        initial={{ y: -10, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
-        exit={{ y: 20, opacity: 0 }}
-        transition={{ duration: 0.2 }}
+        exit={{ y: 10, opacity: 0 }}
+        transition={{ duration: 0.15 }}
       >
         <IconButton
-          aria-label="colour mode"
-          colorScheme={useColorModeValue('purple', 'orange')}
-          icon={useColorModeValue(<MoonIcon />, <SunIcon />)}
-          onClick={() => toggleColorMode()}
+          aria-label="Toggle color mode"
           variant="ghost"
-          fontSize="25px"
-          size="lg"
+          color={useColorModeValue('gray.600', 'gray.300')}
+          icon={useColorModeValue(
+            <MoonIcon boxSize={4} />, 
+            <SunIcon boxSize={4} />
+          )}
+          onClick={toggleColorMode}
+          size="sm"
+          p={1}
+          minW={8}
+          h={8}
+          _hover={{
+            bg: useColorModeValue('gray.100', 'gray.700'),
+            transform: 'translateY(-1px)'
+          }}
           {...rest}
-        ></IconButton>
+        />
       </motion.div>
     </AnimatePresence>
   )

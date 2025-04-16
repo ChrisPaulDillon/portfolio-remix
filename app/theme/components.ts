@@ -3,26 +3,25 @@ import { mode } from '@chakra-ui/theme-tools'
 export const components = {
   Button: {
     defaultProps: {
-      variant: 'solid',
-      colorScheme: 'red'
+      colorScheme: 'brand'
     }
   },
   Link: {
     baseStyle: props => ({
-      // color: mode('#3d7aed', '#ff63c3')(props),
+      color: mode('brand.600', 'brand.300')(props),
       textUnderlineOffset: 3
     })
   },
   Text: {
     baseStyle: props => ({
-      color: mode('gray.800', 'white')(props),
+      color: mode('gray.800', 'gray.200')(props),
       textUnderlineOffset: 3,
       fontWeight: 'normal'
     })
   },
   Heading: {
     baseStyle: props => ({
-      color: mode('gray.600', 'white')(props),
+      color: mode('gray.800', 'gray.100')(props),
       textUnderlineOffset: 3
     })
   }

@@ -1,6 +1,6 @@
 export type TechnologyItem = {
-  title: string
-  imgSrc: string
+  title: string;
+  imgSrc: string;
 }
 
 export const TECHNOLOGIES: TechnologyItem[] = [

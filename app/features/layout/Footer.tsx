@@ -1,7 +1,8 @@
 import {
   Box,
-  BoxProps,
-  Flex,
+  Container,
+  Grid,
+  GridItem,
   Heading,
   HeadingProps,
   HStack,
@@ -9,6 +10,7 @@ import {
   Link,
   Text,
   TextProps,
+  useColorModeValue,
   VStack
 } from '@chakra-ui/react'
 import { useLocation } from '@remix-run/react'
@@ -24,91 +26,103 @@ const FooterText: React.FC<{ href?: string } & TextProps> = ({
 }) => {
   const { pathname } = useLocation()
   const isHighlighted = pathname === href
+  const textColor = useColorModeValue('gray.600', 'gray.400')
 
   return (
     <Text
-      fontSize="md"
+      fontSize="sm"
+      color={textColor}
       w="100%"
-      lineHeight={6}
+      lineHeight={1.6}
       textDecor={isHighlighted ? 'underline' : 'inherit'}
+      _hover={{ color: useColorModeValue('gray.800', 'gray.200') }}
+      transition="color 0.2s"
+      textAlign={{ base: 'center', md: 'left' }}
       {...rest}
     />
   )
 }
+
 const FooterHeading: React.FC<HeadingProps> = props => (
-  <Heading size="lg" w="100%" lineHeight={1.5} {...props} />
+  <Heading
+    size="md"
+    mb={4}
+    color={useColorModeValue('gray.700', 'gray.300')}
+    textAlign={{ base: 'center', md: 'left' }}
+    {...props}
+  />
 )
 
-export const Footer: React.FC<BoxProps> = props => {
+export const Footer: React.FC = () => {
+  const borderColor = useColorModeValue('gray.200', 'gray.700')
+  const bgColor = useColorModeValue('white', 'gray.900')
+  
   return (
     <Box
       as="footer"
       borderTop="1px"
-      borderColor="border"
-      w="100%"
-      px={20}
-      py={2}
+      borderColor={borderColor}
+      bg={bgColor}
+      py={8}
     >
-      <Flex
-        minH="200px"
-        direction={{ base: 'column', md: 'row' }}
-        justifyContent="space-between"
-        align="center"
-        textAlign={{ sm: 'center', lg: 'left' }}
-        {...props}
-      >
-        <VStack
-          lineHeight={0.8}
-          minW="150px"
-          justifyItems={{ base: 'center', sm: 'center', lg: 'flex-start' }}
-          alignItems={{ base: 'center', lg: 'flex-start' }}
-          textAlign={{ base: 'center', sm: 'center', md: 'left', lg: 'left' }}
-          w="fill"
+      <Container maxW="1250px">
+        <Grid
+          templateColumns={{ base: '1fr', md: 'repeat(3, 1fr)' }}
+          gap={{ base: 8, md: 12 }}
         >
-          <FooterHeading>Browse</FooterHeading>
-          {NAV_LINKS.map(link => (
-            <Box w="100%" key={link.label}>
-              <Link href={link.href}>
-                <FooterText href={link.href}>{link.label}</FooterText>
-              </Link>
-            </Box>
-          ))}
-        </VStack>
-        <VStack
-          pt={{ base: 10, sm: 10, md: 0, lg: 0 }}
-          textAlign={{ base: 'center', sm: 'center', md: 'left', lg: 'left' }}
+          <GridItem>
+            <FooterHeading>Browse</FooterHeading>
+            <VStack align={{ base: 'center', md: 'flex-start' }} spacing={2}>
+              {NAV_LINKS.map(link => (
+                <Link key={link.label} href={link.href}>
+                  <FooterText href={link.href}>{link.label}</FooterText>
+                </Link>
+              ))}
+            </VStack>
+          </GridItem>
+
+          <GridItem>
+            <FooterHeading>Contact</FooterHeading>
+            <VStack align={{ base: 'center', md: 'flex-start' }} spacing={3}>
+              <HStack spacing={3}>
+                <Icon as={GoLocation} color={useColorModeValue('gray.600', 'gray.400')} />
+                <FooterText>Scotland, United Kingdom</FooterText>
+              </HStack>
+              <HStack spacing={3}>
+                <Icon as={AiOutlineMail} color={useColorModeValue('gray.600', 'gray.400')} />
+                <FooterText>chrispauldillon@live.com</FooterText>
+              </HStack>
+            </VStack>
+          </GridItem>
+
+          <GridItem>
+            <FooterHeading>Connect</FooterHeading>
+            <HStack spacing={4} justify={{ base: 'center', md: 'flex-start' }}>
+              <SocialButton
+                label="LinkedIn"
+                href="https://www.linkedin.com/in/christopher-d-106005183/"
+              >
+                <FaLinkedin />
+              </SocialButton>
+              <SocialButton
+                label="GitHub"
+                href="https://github.com/ChrisPaulDillon"
+              >
+                <FaGithub />
+              </SocialButton>
+            </HStack>
+          </GridItem>
+        </Grid>
+
+        <Text
+          fontSize="xs"
+          textAlign="center"
+          color={useColorModeValue('gray.500', 'gray.500')}
+          mt={8}
         >
-          <FooterHeading>Contact</FooterHeading>
-          <HStack alignContent="flex-start" w="100%">
-            <Icon as={GoLocation} />
-            <FooterText>Scotland, United Kingdom</FooterText>
-          </HStack>
-          <HStack w="100%">
-            <Icon as={AiOutlineMail} />
-            <FooterText>chrispauldillon@live.com</FooterText>
-          </HStack>
-        </VStack>
-        <VStack py={{ base: 10, sm: 10, md: 0, lg: 0 }}>
-          <FooterHeading>Relevant Links</FooterHeading>
-          <HStack>
-            <SocialButton
-              label={'Github'}
-              href={'https://github.com/ChrisPaulDillon'}
-            >
-              <FaGithub />
-            </SocialButton>
-            <SocialButton
-              label={'LinkedIn'}
-              href={'https://www.linkedin.com/in/christopher-d-106005183/'}
-            >
-              <FaLinkedin />
-            </SocialButton>
-          </HStack>
-        </VStack>
-      </Flex>{' '}
-      <Text fontSize="xs" textAlign="center" pt={{ xs: 7, sm: 7, lg: 0 }}>
-        © {new Date().getFullYear()} Chris Dillon. All rights reserved
-      </Text>
+          © {new Date().getFullYear()} Chris Dillon. All rights reserved
+        </Text>
+      </Container>
     </Box>
   )
 }

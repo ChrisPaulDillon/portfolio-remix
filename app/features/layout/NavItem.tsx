@@ -1,15 +1,14 @@
 import {
-  Flex,
-  FlexProps,
+  Button,
+  ButtonProps,
   Icon,
-  ScaleFade,
   Text,
   useColorModeValue
 } from '@chakra-ui/react'
 import { Link, useLocation } from '@remix-run/react'
 import { NavItemType } from './const'
 
-type NavItemProps = NavItemType & FlexProps
+type NavItemProps = NavItemType & ButtonProps
 
 export const NavItem: React.FC<NavItemProps> = ({
   icon,
@@ -19,47 +18,42 @@ export const NavItem: React.FC<NavItemProps> = ({
   isScrolling,
   ...rest
 }) => {
-  const textColor = useColorModeValue(
-    isScrolling ? 'white' : 'gray.600',
-    'white'
-  )
-
-  const bgColourHovered = useColorModeValue('whiteAlpha.600', 'blackAlpha.400')
   const { pathname } = useLocation()
   const active = pathname === href
+  
+  const textColor = useColorModeValue('gray.700', 'gray.200')
+  const activeTextColor = useColorModeValue('purple.600', 'purple.300')
+  const hoverBg = useColorModeValue('gray.100', 'gray.700')
+  const activeBg = useColorModeValue('purple.50', 'purple.900')
+
   return (
     <Link to={href}>
-      <ScaleFade initialScale={1} whileHover={{ scale: 1.1 }} in={true}>
-        <Flex
-          align="center"
-          px={3}
-          mx={1}
-          rounded="md"
-          py={1.5}
-          cursor="pointer"
-          _hover={{
-            bg: bgColourHovered,
-            color: 'whiteAlpha.400',
-            fontWeight: 'bold'
-          }}
-          role="group"
-          fontWeight={active ? 'bold' : 'semibold'}
-          transition=".15s ease"
-          onClick={onClose}
-          {...rest}
+      <Button
+        variant="ghost"
+        size="sm"
+        px={3}
+        py={2}
+        display="flex"
+        alignItems="center"
+        gap={2}
+        color={active ? activeTextColor : textColor}
+        bg={active ? activeBg : 'transparent'}
+        _hover={{
+          bg: hoverBg,
+          transform: 'translateY(-1px)'
+        }}
+        onClick={onClose}
+        transition="all 0.2s"
+        {...rest}
+      >
+        <Icon as={icon} boxSize={4} />
+        <Text
+          fontSize="sm"
+          fontWeight={active ? 'semibold' : 'medium'}
         >
-          <Icon mr="2" boxSize="5" color="primary" as={icon} />
-          <Text
-            color={textColor}
-            textDecor={active ? 'underline' : 'none'}
-            textDecorationThickness="2px"
-            textUnderlineOffset={4.5}
-            fontWeight={{ base: 'semibold', lg: 'normal' }}
-          >
-            {label}
-          </Text>
-        </Flex>
-      </ScaleFade>
+          {label}
+        </Text>
+      </Button>
     </Link>
   )
 }
