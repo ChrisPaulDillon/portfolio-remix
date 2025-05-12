@@ -114,10 +114,8 @@ import {
   MdPermContactCalendar,
   MdWork
 } from "react-icons/md";
-import { RiQuestionnaireFill } from "react-icons/ri";
 var NAV_LINKS = [
   { icon: MdHome, href: "/", label: "Home" },
-  { icon: RiQuestionnaireFill, href: "/aboutme", label: "About Me" },
   { icon: BsFolderFill, href: "/portfolio", label: "Portfolio" },
   { icon: MdOutlineBiotech, href: "/technology", label: "Technologies" },
   { icon: MdWork, href: "/experience", label: "Experience" },
@@ -2224,54 +2222,6 @@ var PortfolioPage = () => /* @__PURE__ */ jsxDEV17(PageContainer, { children: [
   columnNumber: 3
 }, this), portfolio_default = PortfolioPage;
 
-// app/routes/aboutme.tsx
-var aboutme_exports = {};
-__export(aboutme_exports, {
-  default: () => aboutme_default
-});
-import { Text as Text7 } from "@chakra-ui/react";
-import { jsxDEV as jsxDEV18 } from "react/jsx-dev-runtime";
-var AboutMePage = () => /* @__PURE__ */ jsxDEV18(PageContainer, { children: [
-  /* @__PURE__ */ jsxDEV18(SectionHeading, { children: "About Me" }, void 0, !1, {
-    fileName: "app/routes/aboutme.tsx",
-    lineNumber: 8,
-    columnNumber: 5
-  }, this),
-  /* @__PURE__ */ jsxDEV18(Text7, { mt: 2, children: [
-    "Hello! My name is Chris and I have a passionate for designing and developing technology. I started programming at the young age of 14, creating scripts for the popular online MMORPG game called RuneScape. More recently, I achieved a Masters in Big Data Technologies and progressed onto a PhD programme in Blockchain Technology. During my PhD, I had the privilege of teaching modules at Masters level at Newcastle University.",
-    /* @__PURE__ */ jsxDEV18("br", {}, void 0, !1, {
-      fileName: "app/routes/aboutme.tsx",
-      lineNumber: 16,
-      columnNumber: 7
-    }, this),
-    /* @__PURE__ */ jsxDEV18("br", {}, void 0, !1, {
-      fileName: "app/routes/aboutme.tsx",
-      lineNumber: 17,
-      columnNumber: 7
-    }, this),
-    "Fast forward to today, I am a seasoned Software Engineer with a huge range of skills including full stack development, creation of agents, data analysis and mobile development.The core technology stack I have worked on includes C#, NextJs, TypeScript, Chakra UI & React. I have extensive experience with Data Analysis with the programming language Python, including utilising the popular Data Science libraries such as NumPY, SkLearn & more.",
-    /* @__PURE__ */ jsxDEV18("br", {}, void 0, !1, {
-      fileName: "app/routes/aboutme.tsx",
-      lineNumber: 25,
-      columnNumber: 7
-    }, this),
-    /* @__PURE__ */ jsxDEV18("br", {}, void 0, !1, {
-      fileName: "app/routes/aboutme.tsx",
-      lineNumber: 26,
-      columnNumber: 7
-    }, this),
-    "In my spare time, I love keeping fit and going to the gym. I am also an avid reader and study many topics such as programming, neuroscience and psychology. My favourite books rergarding programming are Refactoring: Improving the Design of Existing Code, Head First Design Patterns and the You Don't Know Javascript Series."
-  ] }, void 0, !0, {
-    fileName: "app/routes/aboutme.tsx",
-    lineNumber: 9,
-    columnNumber: 5
-  }, this)
-] }, void 0, !0, {
-  fileName: "app/routes/aboutme.tsx",
-  lineNumber: 7,
-  columnNumber: 3
-}, this), aboutme_default = AboutMePage;
-
 // app/routes/contact.tsx
 var contact_exports = {};
 __export(contact_exports, {
@@ -2285,7 +2235,7 @@ import {
   HStack as HStack3,
   Icon as Icon5,
   IconButton as IconButton3,
-  Text as Text8,
+  Text as Text7,
   VStack as VStack5,
   useColorModeValue as useColorModeValue12
 } from "@chakra-ui/react";
@@ -2322,14 +2272,14 @@ import {
 } from "@chakra-ui/react";
 import { FaBan, FaCheckCircle, FaExclamation } from "react-icons/fa";
 import { IoMdCheckmarkCircle } from "react-icons/io";
-import { jsxDEV as jsxDEV19 } from "react/jsx-dev-runtime";
+import { jsxDEV as jsxDEV18 } from "react/jsx-dev-runtime";
 var ToastBody = ({
   title,
   description,
   toastType,
   Icon: Icon9,
   color
-}) => /* @__PURE__ */ jsxDEV19(Flex6, { w: "full", alignItems: "center", justifyContent: "center", children: /* @__PURE__ */ jsxDEV19(
+}) => /* @__PURE__ */ jsxDEV18(Flex6, { w: "full", alignItems: "center", justifyContent: "center", children: /* @__PURE__ */ jsxDEV18(
   Flex6,
   {
     maxW: "sm",
@@ -2340,7 +2290,7 @@ var ToastBody = ({
     rounded: "lg",
     overflow: "hidden",
     children: [
-      /* @__PURE__ */ jsxDEV19(Flex6, { justifyContent: "center", alignItems: "center", w: 12, bg: color, children: /* @__PURE__ */ jsxDEV19(Icon9, { as: IoMdCheckmarkCircle, color: "white", boxSize: 6 }, void 0, !1, {
+      /* @__PURE__ */ jsxDEV18(Flex6, { justifyContent: "center", alignItems: "center", w: 12, bg: color, children: /* @__PURE__ */ jsxDEV18(Icon9, { as: IoMdCheckmarkCircle, color: "white", boxSize: 6 }, void 0, !1, {
         fileName: "app/hooks/useAppToast.tsx",
         lineNumber: 40,
         columnNumber: 11
@@ -2349,13 +2299,13 @@ var ToastBody = ({
         lineNumber: 39,
         columnNumber: 9
       }, this),
-      /* @__PURE__ */ jsxDEV19(Box7, { mx: -3, py: 2, px: 4, children: /* @__PURE__ */ jsxDEV19(Box7, { mx: 3, children: [
-        /* @__PURE__ */ jsxDEV19(chakra2.span, { color, fontWeight: "bold", children: title ?? toastType }, void 0, !1, {
+      /* @__PURE__ */ jsxDEV18(Box7, { mx: -3, py: 2, px: 4, children: /* @__PURE__ */ jsxDEV18(Box7, { mx: 3, children: [
+        /* @__PURE__ */ jsxDEV18(chakra2.span, { color, fontWeight: "bold", children: title ?? toastType }, void 0, !1, {
           fileName: "app/hooks/useAppToast.tsx",
           lineNumber: 45,
           columnNumber: 13
         }, this),
-        /* @__PURE__ */ jsxDEV19(
+        /* @__PURE__ */ jsxDEV18(
           chakra2.p,
           {
             color: useColorModeValue10("gray.600", "gray.200"),
@@ -2394,7 +2344,7 @@ var ToastBody = ({
   fileName: "app/hooks/useAppToast.tsx",
   lineNumber: 29,
   columnNumber: 5
-}, this), ToastSuccess = ({ title, description }) => /* @__PURE__ */ jsxDEV19(
+}, this), ToastSuccess = ({ title, description }) => /* @__PURE__ */ jsxDEV18(
   ToastBody,
   {
     title,
@@ -2413,7 +2363,7 @@ var ToastBody = ({
   this
 ), ToastError = ({ title, description }) => {
   let { colorMode } = useColorMode2();
-  return /* @__PURE__ */ jsxDEV19(
+  return /* @__PURE__ */ jsxDEV18(
     ToastBody,
     {
       title,
@@ -2433,7 +2383,7 @@ var ToastBody = ({
   );
 }, ToastWarning = ({ title, description }) => {
   let { colorMode } = useColorMode2();
-  return /* @__PURE__ */ jsxDEV19(
+  return /* @__PURE__ */ jsxDEV18(
     ToastBody,
     {
       title,
@@ -2456,7 +2406,7 @@ var ToastBody = ({
   return { toastSuccess: (title, description, position) => {
     toast({
       position: position || "top",
-      render: () => /* @__PURE__ */ jsxDEV19(ToastSuccess, { title, description }, void 0, !1, {
+      render: () => /* @__PURE__ */ jsxDEV18(ToastSuccess, { title, description }, void 0, !1, {
         fileName: "app/hooks/useAppToast.tsx",
         lineNumber: 116,
         columnNumber: 21
@@ -2467,7 +2417,7 @@ var ToastBody = ({
   }, toastError: (title, description, position) => {
     toast({
       position: position || "top",
-      render: () => /* @__PURE__ */ jsxDEV19(ToastError, { title, description }, void 0, !1, {
+      render: () => /* @__PURE__ */ jsxDEV18(ToastError, { title, description }, void 0, !1, {
         fileName: "app/hooks/useAppToast.tsx",
         lineNumber: 129,
         columnNumber: 21
@@ -2478,7 +2428,7 @@ var ToastBody = ({
   }, toastWarning: (title, description, position) => {
     toast({
       position: position || "top",
-      render: () => /* @__PURE__ */ jsxDEV19(ToastWarning, { title, description }, void 0, !1, {
+      render: () => /* @__PURE__ */ jsxDEV18(ToastWarning, { title, description }, void 0, !1, {
         fileName: "app/hooks/useAppToast.tsx",
         lineNumber: 142,
         columnNumber: 21
@@ -2490,12 +2440,12 @@ var ToastBody = ({
 };
 
 // app/features/contact/ContactFormContainer.tsx
-import { jsxDEV as jsxDEV20 } from "react/jsx-dev-runtime";
+import { jsxDEV as jsxDEV19 } from "react/jsx-dev-runtime";
 var ContactFormContainer = () => {
   let { register, handleSubmit, formState: { errors } } = useForm(), { toastSuccess } = useAppToast(), handleFormSubmit = (values) => {
     toastSuccess("Success", "Opening your email client", "top-right"), window.location.href = `mailto:chrispauldillon@live.com?subject=${values.subject}&body=${values.body} Best regards, ${values.name}`;
   }, inputBg = useColorModeValue11("gray.100", "whiteAlpha.100"), borderColor = useColorModeValue11("purple.300", "purple.500"), hoverBorderColor = useColorModeValue11("purple.500", "purple.300");
-  return /* @__PURE__ */ jsxDEV20(
+  return /* @__PURE__ */ jsxDEV19(
     Box8,
     {
       bg: useColorModeValue11("white", "gray.800"),
@@ -2507,15 +2457,15 @@ var ContactFormContainer = () => {
       borderColor,
       _hover: { borderColor: hoverBorderColor },
       transition: "all 0.3s",
-      children: /* @__PURE__ */ jsxDEV20("form", { onSubmit: handleSubmit(handleFormSubmit), children: /* @__PURE__ */ jsxDEV20(VStack4, { spacing: 5, children: [
-        /* @__PURE__ */ jsxDEV20(FormControl, { isRequired: !0, children: [
-          /* @__PURE__ */ jsxDEV20(FormLabel, { fontSize: "lg", fontWeight: "medium", children: "Your Name" }, void 0, !1, {
+      children: /* @__PURE__ */ jsxDEV19("form", { onSubmit: handleSubmit(handleFormSubmit), children: /* @__PURE__ */ jsxDEV19(VStack4, { spacing: 5, children: [
+        /* @__PURE__ */ jsxDEV19(FormControl, { isRequired: !0, children: [
+          /* @__PURE__ */ jsxDEV19(FormLabel, { fontSize: "lg", fontWeight: "medium", children: "Your Name" }, void 0, !1, {
             fileName: "app/features/contact/ContactFormContainer.tsx",
             lineNumber: 46,
             columnNumber: 13
           }, this),
-          /* @__PURE__ */ jsxDEV20(InputGroup, { children: [
-            /* @__PURE__ */ jsxDEV20(InputLeftElement, { pointerEvents: "none", children: /* @__PURE__ */ jsxDEV20(BsPerson, { color: "gray.800" }, void 0, !1, {
+          /* @__PURE__ */ jsxDEV19(InputGroup, { children: [
+            /* @__PURE__ */ jsxDEV19(InputLeftElement, { pointerEvents: "none", children: /* @__PURE__ */ jsxDEV19(BsPerson, { color: "gray.800" }, void 0, !1, {
               fileName: "app/features/contact/ContactFormContainer.tsx",
               lineNumber: 49,
               columnNumber: 17
@@ -2524,7 +2474,7 @@ var ContactFormContainer = () => {
               lineNumber: 48,
               columnNumber: 15
             }, this),
-            /* @__PURE__ */ jsxDEV20(
+            /* @__PURE__ */ jsxDEV19(
               Input,
               {
                 type: "text",
@@ -2555,14 +2505,14 @@ var ContactFormContainer = () => {
           lineNumber: 45,
           columnNumber: 11
         }, this),
-        /* @__PURE__ */ jsxDEV20(FormControl, { isRequired: !0, children: [
-          /* @__PURE__ */ jsxDEV20(FormLabel, { fontSize: "lg", fontWeight: "medium", children: "Subject" }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV19(FormControl, { isRequired: !0, children: [
+          /* @__PURE__ */ jsxDEV19(FormLabel, { fontSize: "lg", fontWeight: "medium", children: "Subject" }, void 0, !1, {
             fileName: "app/features/contact/ContactFormContainer.tsx",
             lineNumber: 65,
             columnNumber: 13
           }, this),
-          /* @__PURE__ */ jsxDEV20(InputGroup, { children: [
-            /* @__PURE__ */ jsxDEV20(InputLeftElement, { pointerEvents: "none", children: /* @__PURE__ */ jsxDEV20(MdSubject, { color: "gray.800" }, void 0, !1, {
+          /* @__PURE__ */ jsxDEV19(InputGroup, { children: [
+            /* @__PURE__ */ jsxDEV19(InputLeftElement, { pointerEvents: "none", children: /* @__PURE__ */ jsxDEV19(MdSubject, { color: "gray.800" }, void 0, !1, {
               fileName: "app/features/contact/ContactFormContainer.tsx",
               lineNumber: 68,
               columnNumber: 17
@@ -2571,7 +2521,7 @@ var ContactFormContainer = () => {
               lineNumber: 67,
               columnNumber: 15
             }, this),
-            /* @__PURE__ */ jsxDEV20(
+            /* @__PURE__ */ jsxDEV19(
               Input,
               {
                 type: "text",
@@ -2602,13 +2552,13 @@ var ContactFormContainer = () => {
           lineNumber: 64,
           columnNumber: 11
         }, this),
-        /* @__PURE__ */ jsxDEV20(FormControl, { isRequired: !0, children: [
-          /* @__PURE__ */ jsxDEV20(FormLabel, { fontSize: "lg", fontWeight: "medium", children: "Message" }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV19(FormControl, { isRequired: !0, children: [
+          /* @__PURE__ */ jsxDEV19(FormLabel, { fontSize: "lg", fontWeight: "medium", children: "Message" }, void 0, !1, {
             fileName: "app/features/contact/ContactFormContainer.tsx",
             lineNumber: 84,
             columnNumber: 13
           }, this),
-          /* @__PURE__ */ jsxDEV20(
+          /* @__PURE__ */ jsxDEV19(
             Textarea,
             {
               placeholder: "Your message...",
@@ -2634,7 +2584,7 @@ var ContactFormContainer = () => {
           lineNumber: 83,
           columnNumber: 11
         }, this),
-        /* @__PURE__ */ jsxDEV20(
+        /* @__PURE__ */ jsxDEV19(
           Button2,
           {
             type: "submit",
@@ -2680,10 +2630,10 @@ var ContactFormContainer = () => {
 };
 
 // app/features/contact/ContactFormExtended.tsx
-import { jsxDEV as jsxDEV21 } from "react/jsx-dev-runtime";
+import { jsxDEV as jsxDEV20 } from "react/jsx-dev-runtime";
 var ContactFormExtended = () => {
   let bgColor = useColorModeValue12("whiteAlpha.500", "gray.800"), buttonBgColor = useColorModeValue12("gray.100", "whiteAlpha.200"), buttonHoverBgColor = useColorModeValue12("brand.50", "brand.900"), iconColor = useColorModeValue12("brand.500", "brand.300"), textColor = useColorModeValue12("gray.700", "gray.300"), contactBg = useColorModeValue12("white", "whiteAlpha.100"), contactHoverBg = useColorModeValue12("gray.50", "whiteAlpha.200");
-  return /* @__PURE__ */ jsxDEV21(
+  return /* @__PURE__ */ jsxDEV20(
     Box9,
     {
       bg: bgColor,
@@ -2691,14 +2641,14 @@ var ContactFormExtended = () => {
       p: { sm: 5, md: 5, lg: 16 },
       w: "100%",
       boxShadow: "xl",
-      children: /* @__PURE__ */ jsxDEV21(Flex7, { flexDir: { base: "column", lg: "row" }, gap: 8, children: [
-        /* @__PURE__ */ jsxDEV21(Box9, { flex: "1", children: [
-          /* @__PURE__ */ jsxDEV21(SectionHeading, { children: "Get in Touch" }, void 0, !1, {
+      children: /* @__PURE__ */ jsxDEV20(Flex7, { flexDir: { base: "column", lg: "row" }, gap: 8, children: [
+        /* @__PURE__ */ jsxDEV20(Box9, { flex: "1", children: [
+          /* @__PURE__ */ jsxDEV20(SectionHeading, { children: "Get in Touch" }, void 0, !1, {
             fileName: "app/features/contact/ContactFormExtended.tsx",
             lineNumber: 38,
             columnNumber: 11
           }, this),
-          /* @__PURE__ */ jsxDEV21(
+          /* @__PURE__ */ jsxDEV20(
             HomeBodyText,
             {
               mt: 4,
@@ -2716,8 +2666,8 @@ var ContactFormExtended = () => {
             },
             this
           ),
-          /* @__PURE__ */ jsxDEV21(VStack5, { spacing: 4, mt: 8, align: { base: "center", lg: "flex-start" }, children: [
-            /* @__PURE__ */ jsxDEV21(
+          /* @__PURE__ */ jsxDEV20(VStack5, { spacing: 4, mt: 8, align: { base: "center", lg: "flex-start" }, children: [
+            /* @__PURE__ */ jsxDEV20(
               Flex7,
               {
                 align: "center",
@@ -2733,12 +2683,12 @@ var ContactFormExtended = () => {
                   transform: "translateY(-2px)"
                 },
                 children: [
-                  /* @__PURE__ */ jsxDEV21(Icon5, { as: MdEmail, color: iconColor, boxSize: 5 }, void 0, !1, {
+                  /* @__PURE__ */ jsxDEV20(Icon5, { as: MdEmail, color: iconColor, boxSize: 5 }, void 0, !1, {
                     fileName: "app/features/contact/ContactFormExtended.tsx",
                     lineNumber: 64,
                     columnNumber: 15
                   }, this),
-                  /* @__PURE__ */ jsxDEV21(Text8, { fontSize: "md", color: textColor, fontWeight: "medium", children: "chrispauldillon@live.com" }, void 0, !1, {
+                  /* @__PURE__ */ jsxDEV20(Text7, { fontSize: "md", color: textColor, fontWeight: "medium", children: "chrispauldillon@live.com" }, void 0, !1, {
                     fileName: "app/features/contact/ContactFormExtended.tsx",
                     lineNumber: 65,
                     columnNumber: 15
@@ -2754,7 +2704,7 @@ var ContactFormExtended = () => {
               },
               this
             ),
-            /* @__PURE__ */ jsxDEV21(
+            /* @__PURE__ */ jsxDEV20(
               Flex7,
               {
                 align: "center",
@@ -2770,12 +2720,12 @@ var ContactFormExtended = () => {
                   transform: "translateY(-2px)"
                 },
                 children: [
-                  /* @__PURE__ */ jsxDEV21(Icon5, { as: MdLocationOn, color: iconColor, boxSize: 5 }, void 0, !1, {
+                  /* @__PURE__ */ jsxDEV20(Icon5, { as: MdLocationOn, color: iconColor, boxSize: 5 }, void 0, !1, {
                     fileName: "app/features/contact/ContactFormExtended.tsx",
                     lineNumber: 84,
                     columnNumber: 15
                   }, this),
-                  /* @__PURE__ */ jsxDEV21(Text8, { fontSize: "md", color: textColor, fontWeight: "medium", children: "Scotland, United Kingdom" }, void 0, !1, {
+                  /* @__PURE__ */ jsxDEV20(Text7, { fontSize: "md", color: textColor, fontWeight: "medium", children: "Scotland, United Kingdom" }, void 0, !1, {
                     fileName: "app/features/contact/ContactFormExtended.tsx",
                     lineNumber: 85,
                     columnNumber: 15
@@ -2796,18 +2746,18 @@ var ContactFormExtended = () => {
             lineNumber: 49,
             columnNumber: 11
           }, this),
-          /* @__PURE__ */ jsxDEV21(
+          /* @__PURE__ */ jsxDEV20(
             HStack3,
             {
               mt: 8,
               spacing: 4,
               justify: { base: "center", lg: "flex-start" },
               children: [
-                /* @__PURE__ */ jsxDEV21(Link5, { to: "https://www.linkedin.com/in/christopher-d-106005183/", children: /* @__PURE__ */ jsxDEV21(
+                /* @__PURE__ */ jsxDEV20(Link5, { to: "https://www.linkedin.com/in/christopher-d-106005183/", children: /* @__PURE__ */ jsxDEV20(
                   IconButton3,
                   {
                     "aria-label": "linkedin",
-                    icon: /* @__PURE__ */ jsxDEV21(FaLinkedin2, { size: "24px" }, void 0, !1, {
+                    icon: /* @__PURE__ */ jsxDEV20(FaLinkedin2, { size: "24px" }, void 0, !1, {
                       fileName: "app/features/contact/ContactFormExtended.tsx",
                       lineNumber: 99,
                       columnNumber: 23
@@ -2835,11 +2785,11 @@ var ContactFormExtended = () => {
                   lineNumber: 96,
                   columnNumber: 13
                 }, this),
-                /* @__PURE__ */ jsxDEV21(Link5, { to: "https://github.com/ChrisPaulDillon", children: /* @__PURE__ */ jsxDEV21(
+                /* @__PURE__ */ jsxDEV20(Link5, { to: "https://github.com/ChrisPaulDillon", children: /* @__PURE__ */ jsxDEV20(
                   IconButton3,
                   {
                     "aria-label": "github",
-                    icon: /* @__PURE__ */ jsxDEV21(BsGithub2, { size: "24px" }, void 0, !1, {
+                    icon: /* @__PURE__ */ jsxDEV20(BsGithub2, { size: "24px" }, void 0, !1, {
                       fileName: "app/features/contact/ContactFormExtended.tsx",
                       lineNumber: 114,
                       columnNumber: 23
@@ -2883,7 +2833,7 @@ var ContactFormExtended = () => {
           lineNumber: 37,
           columnNumber: 9
         }, this),
-        /* @__PURE__ */ jsxDEV21(Box9, { flex: "1", children: /* @__PURE__ */ jsxDEV21(ContactFormContainer, {}, void 0, !1, {
+        /* @__PURE__ */ jsxDEV20(Box9, { flex: "1", children: /* @__PURE__ */ jsxDEV20(ContactFormContainer, {}, void 0, !1, {
           fileName: "app/features/contact/ContactFormExtended.tsx",
           lineNumber: 130,
           columnNumber: 11
@@ -2910,8 +2860,8 @@ var ContactFormExtended = () => {
 };
 
 // app/routes/contact.tsx
-import { jsxDEV as jsxDEV22 } from "react/jsx-dev-runtime";
-var ContactPage = () => /* @__PURE__ */ jsxDEV22(PageContainer, { children: /* @__PURE__ */ jsxDEV22(ContactFormExtended, {}, void 0, !1, {
+import { jsxDEV as jsxDEV21 } from "react/jsx-dev-runtime";
+var ContactPage = () => /* @__PURE__ */ jsxDEV21(PageContainer, { children: /* @__PURE__ */ jsxDEV21(ContactFormExtended, {}, void 0, !1, {
   fileName: "app/routes/contact.tsx",
   lineNumber: 6,
   columnNumber: 5
@@ -2935,10 +2885,10 @@ import { Box as Box11, Flex as Flex8, Stack as Stack3 } from "@chakra-ui/react";
 
 // app/features/shared/ProfileAvatar.tsx
 import { Box as Box10, Image as Image4, useColorModeValue as useColorModeValue13 } from "@chakra-ui/react";
-import { jsxDEV as jsxDEV23 } from "react/jsx-dev-runtime";
+import { jsxDEV as jsxDEV22 } from "react/jsx-dev-runtime";
 var ProfileAvatar = (props) => {
   let imageUrl = useAssetUrl("/images/chris.png");
-  return /* @__PURE__ */ jsxDEV23(
+  return /* @__PURE__ */ jsxDEV22(
     Box10,
     {
       display: "inline-block",
@@ -2947,7 +2897,7 @@ var ProfileAvatar = (props) => {
       boxShadow: "rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px",
       borderColor: useColorModeValue13("gray.700", "navy.400"),
       ...props,
-      children: /* @__PURE__ */ jsxDEV23(
+      children: /* @__PURE__ */ jsxDEV22(
         Image4,
         {
           src: imageUrl,
@@ -2979,23 +2929,23 @@ var ProfileAvatar = (props) => {
 };
 
 // app/features/home/AboutMeSection.tsx
-import { jsxDEV as jsxDEV24 } from "react/jsx-dev-runtime";
-var AboutMeSection = (props) => /* @__PURE__ */ jsxDEV24(Box11, { as: "section", children: [
-  /* @__PURE__ */ jsxDEV24(SectionHeading, { children: "About Me" }, void 0, !1, {
+import { jsxDEV as jsxDEV23 } from "react/jsx-dev-runtime";
+var AboutMeSection = (props) => /* @__PURE__ */ jsxDEV23(Box11, { as: "section", children: [
+  /* @__PURE__ */ jsxDEV23(SectionHeading, { children: "About Me" }, void 0, !1, {
     fileName: "app/features/home/AboutMeSection.tsx",
     lineNumber: 10,
     columnNumber: 5
   }, this),
-  /* @__PURE__ */ jsxDEV24(Stack3, { direction: { base: "column", lg: "row" }, w: "100%", ...props, children: [
-    /* @__PURE__ */ jsxDEV24(HomeBodyText, { children: [
+  /* @__PURE__ */ jsxDEV23(Stack3, { direction: { base: "column", lg: "row" }, w: "100%", ...props, children: [
+    /* @__PURE__ */ jsxDEV23(HomeBodyText, { children: [
       "Hello! My name is Chris and I have a passionate for designing and developing technology. I started programming at the young age of 14, creating scripts for the popular online MMORPG game called RuneScape. I am a Senior Software Engineer with my predominant languages being C#, Go, React & TypeScript.",
-      /* @__PURE__ */ jsxDEV24("br", {}, void 0, !1, {
+      /* @__PURE__ */ jsxDEV23("br", {}, void 0, !1, {
         fileName: "app/features/home/AboutMeSection.tsx",
         lineNumber: 17,
         columnNumber: 9
       }, this),
       " ",
-      /* @__PURE__ */ jsxDEV24("br", {}, void 0, !1, {
+      /* @__PURE__ */ jsxDEV23("br", {}, void 0, !1, {
         fileName: "app/features/home/AboutMeSection.tsx",
         lineNumber: 17,
         columnNumber: 16
@@ -3006,7 +2956,7 @@ var AboutMeSection = (props) => /* @__PURE__ */ jsxDEV24(Box11, { as: "section",
       lineNumber: 12,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ jsxDEV24(Flex8, { justifyContent: "center", pb: { base: 4, sm: 4, lg: 0 }, w: "100%", children: /* @__PURE__ */ jsxDEV24(ProfileAvatar, {}, void 0, !1, {
+    /* @__PURE__ */ jsxDEV23(Flex8, { justifyContent: "center", pb: { base: 4, sm: 4, lg: 0 }, w: "100%", children: /* @__PURE__ */ jsxDEV23(ProfileAvatar, {}, void 0, !1, {
       fileName: "app/features/home/AboutMeSection.tsx",
       lineNumber: 23,
       columnNumber: 9
@@ -3036,11 +2986,11 @@ import {
   Heading as Heading6,
   Icon as Icon6,
   Stack as Stack4,
-  Text as Text9,
+  Text as Text8,
   useColorModeValue as useColorModeValue14
 } from "@chakra-ui/react";
 import { HiAcademicCap } from "react-icons/hi";
-import { jsxDEV as jsxDEV25 } from "react/jsx-dev-runtime";
+import { jsxDEV as jsxDEV24 } from "react/jsx-dev-runtime";
 var academicHistory = [
   {
     degree: "MSc Big Data Technologies",
@@ -3059,13 +3009,13 @@ var academicHistory = [
   }
 ], AcademicSection = () => {
   let cardBg = useColorModeValue14("white", "gray.800"), borderColor = useColorModeValue14("red.100", "red.700"), iconBg = useColorModeValue14("red.50", "red.900"), iconColor = useColorModeValue14("red.500", "red.200"), institutionColor = useColorModeValue14("gray.600", "gray.400");
-  return /* @__PURE__ */ jsxDEV25(Box12, { w: "100%", children: [
-    /* @__PURE__ */ jsxDEV25(SectionHeading, { children: "Academic Achievements" }, void 0, !1, {
+  return /* @__PURE__ */ jsxDEV24(Box12, { w: "100%", children: [
+    /* @__PURE__ */ jsxDEV24(SectionHeading, { children: "Academic Achievements" }, void 0, !1, {
       fileName: "app/features/home/AcademicSection.tsx",
       lineNumber: 43,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ jsxDEV25(Stack4, { spacing: 4, mt: 6, children: academicHistory.map((education, index) => /* @__PURE__ */ jsxDEV25(
+    /* @__PURE__ */ jsxDEV24(Stack4, { spacing: 4, mt: 6, children: academicHistory.map((education, index) => /* @__PURE__ */ jsxDEV24(
       Card3,
       {
         bg: cardBg,
@@ -3080,14 +3030,14 @@ var academicHistory = [
           borderColor: useColorModeValue14("red.300", "red.500")
         },
         children: [
-          /* @__PURE__ */ jsxDEV25(CardHeader3, { pb: 2, children: /* @__PURE__ */ jsxDEV25(Flex9, { align: "center", gap: 4, children: [
-            /* @__PURE__ */ jsxDEV25(
+          /* @__PURE__ */ jsxDEV24(CardHeader3, { pb: 2, children: /* @__PURE__ */ jsxDEV24(Flex9, { align: "center", gap: 4, children: [
+            /* @__PURE__ */ jsxDEV24(
               Box12,
               {
                 p: 2,
                 borderRadius: "lg",
                 bg: iconBg,
-                children: /* @__PURE__ */ jsxDEV25(
+                children: /* @__PURE__ */ jsxDEV24(
                   Icon6,
                   {
                     as: HiAcademicCap,
@@ -3113,8 +3063,8 @@ var academicHistory = [
               },
               this
             ),
-            /* @__PURE__ */ jsxDEV25(Box12, { children: [
-              /* @__PURE__ */ jsxDEV25(
+            /* @__PURE__ */ jsxDEV24(Box12, { children: [
+              /* @__PURE__ */ jsxDEV24(
                 Heading6,
                 {
                   size: "md",
@@ -3134,8 +3084,8 @@ var academicHistory = [
                 },
                 this
               ),
-              /* @__PURE__ */ jsxDEV25(
-                Text9,
+              /* @__PURE__ */ jsxDEV24(
+                Text8,
                 {
                   fontSize: "sm",
                   color: institutionColor,
@@ -3165,8 +3115,8 @@ var academicHistory = [
             lineNumber: 60,
             columnNumber: 13
           }, this),
-          /* @__PURE__ */ jsxDEV25(CardBody3, { pt: 0, children: /* @__PURE__ */ jsxDEV25(
-            Text9,
+          /* @__PURE__ */ jsxDEV24(CardBody3, { pt: 0, children: /* @__PURE__ */ jsxDEV24(
+            Text8,
             {
               fontSize: "md",
               color: useColorModeValue14("gray.700", "gray.300"),
@@ -3210,9 +3160,9 @@ var academicHistory = [
 // app/features/home/ContactMeSection.tsx
 import { Box as Box13 } from "@chakra-ui/react";
 import { forwardRef } from "react";
-import { jsxDEV as jsxDEV26 } from "react/jsx-dev-runtime";
+import { jsxDEV as jsxDEV25 } from "react/jsx-dev-runtime";
 var ContactMeSection = forwardRef(
-  (props, ref) => /* @__PURE__ */ jsxDEV26(Box13, { as: "section", w: "100%", ref, ...props, children: /* @__PURE__ */ jsxDEV26(ContactFormExtended, {}, void 0, !1, {
+  (props, ref) => /* @__PURE__ */ jsxDEV25(Box13, { as: "section", w: "100%", ref, ...props, children: /* @__PURE__ */ jsxDEV25(ContactFormExtended, {}, void 0, !1, {
     fileName: "app/features/home/ContactMeSection.tsx",
     lineNumber: 8,
     columnNumber: 7
@@ -3237,11 +3187,11 @@ import { Link as Link6 } from "@remix-run/react";
 // app/features/home/ProgrammingCard.tsx
 import { HStack as HStack4, Icon as Icon7, useColorModeValue as useColorModeValue15 } from "@chakra-ui/react";
 import { FaCode } from "react-icons/fa";
-import { jsxDEV as jsxDEV27 } from "react/jsx-dev-runtime";
+import { jsxDEV as jsxDEV26 } from "react/jsx-dev-runtime";
 var ProgrammingCard = ({
   label,
   ...rest
-}) => /* @__PURE__ */ jsxDEV27(
+}) => /* @__PURE__ */ jsxDEV26(
   HStack4,
   {
     justifyContent: "center",
@@ -3261,7 +3211,7 @@ var ProgrammingCard = ({
     },
     ...rest,
     children: [
-      /* @__PURE__ */ jsxDEV27(
+      /* @__PURE__ */ jsxDEV26(
         Icon7,
         {
           as: FaCode,
@@ -3277,7 +3227,7 @@ var ProgrammingCard = ({
         },
         this
       ),
-      /* @__PURE__ */ jsxDEV27(
+      /* @__PURE__ */ jsxDEV26(
         HomeBodyText,
         {
           color: useColorModeValue15("gray.700", "gray.200"),
@@ -3308,8 +3258,8 @@ var ProgrammingCard = ({
 );
 
 // app/features/home/IntroSection.tsx
-import { jsxDEV as jsxDEV28 } from "react/jsx-dev-runtime";
-var IntroSection = (props) => /* @__PURE__ */ jsxDEV28(
+import { jsxDEV as jsxDEV27 } from "react/jsx-dev-runtime";
+var IntroSection = (props) => /* @__PURE__ */ jsxDEV27(
   VStack6,
   {
     as: "section",
@@ -3318,7 +3268,7 @@ var IntroSection = (props) => /* @__PURE__ */ jsxDEV28(
     w: "full",
     ...props,
     children: [
-      /* @__PURE__ */ jsxDEV28(
+      /* @__PURE__ */ jsxDEV27(
         Heading7,
         {
           as: "h1",
@@ -3341,7 +3291,7 @@ var IntroSection = (props) => /* @__PURE__ */ jsxDEV28(
         },
         this
       ),
-      /* @__PURE__ */ jsxDEV28(
+      /* @__PURE__ */ jsxDEV27(
         Heading7,
         {
           as: "h2",
@@ -3360,7 +3310,7 @@ var IntroSection = (props) => /* @__PURE__ */ jsxDEV28(
         },
         this
       ),
-      /* @__PURE__ */ jsxDEV28(
+      /* @__PURE__ */ jsxDEV27(
         HomeBodyText,
         {
           fontSize: { base: "md", sm: "lg", md: "xl" },
@@ -3378,7 +3328,7 @@ var IntroSection = (props) => /* @__PURE__ */ jsxDEV28(
         },
         this
       ),
-      /* @__PURE__ */ jsxDEV28(
+      /* @__PURE__ */ jsxDEV27(
         Flex10,
         {
           direction: { base: "column", sm: "row" },
@@ -3387,18 +3337,18 @@ var IntroSection = (props) => /* @__PURE__ */ jsxDEV28(
           justify: { base: "center", lg: "flex-start" },
           align: "center",
           mt: { base: 4, md: 6 },
-          children: /* @__PURE__ */ jsxDEV28(Box15, { display: "flex", gap: 2, flexWrap: "wrap", justifyContent: { base: "center", lg: "flex-start" }, children: [
-            /* @__PURE__ */ jsxDEV28(ProgrammingCard, { label: "C#" }, void 0, !1, {
+          children: /* @__PURE__ */ jsxDEV27(Box15, { display: "flex", gap: 2, flexWrap: "wrap", justifyContent: { base: "center", lg: "flex-start" }, children: [
+            /* @__PURE__ */ jsxDEV27(ProgrammingCard, { label: "C#" }, void 0, !1, {
               fileName: "app/features/home/IntroSection.tsx",
               lineNumber: 66,
               columnNumber: 9
             }, this),
-            /* @__PURE__ */ jsxDEV28(ProgrammingCard, { label: "TypeScript" }, void 0, !1, {
+            /* @__PURE__ */ jsxDEV27(ProgrammingCard, { label: "TypeScript" }, void 0, !1, {
               fileName: "app/features/home/IntroSection.tsx",
               lineNumber: 67,
               columnNumber: 9
             }, this),
-            /* @__PURE__ */ jsxDEV28(ProgrammingCard, { label: "React" }, void 0, !1, {
+            /* @__PURE__ */ jsxDEV27(ProgrammingCard, { label: "React" }, void 0, !1, {
               fileName: "app/features/home/IntroSection.tsx",
               lineNumber: 68,
               columnNumber: 9
@@ -3418,7 +3368,7 @@ var IntroSection = (props) => /* @__PURE__ */ jsxDEV28(
         },
         this
       ),
-      /* @__PURE__ */ jsxDEV28(Box15, { w: "full", pt: { base: 4, md: 6 }, textAlign: { base: "center", lg: "left" }, children: /* @__PURE__ */ jsxDEV28(Link6, { to: "/portfolio", children: /* @__PURE__ */ jsxDEV28(
+      /* @__PURE__ */ jsxDEV27(Box15, { w: "full", pt: { base: 4, md: 6 }, textAlign: { base: "center", lg: "left" }, children: /* @__PURE__ */ jsxDEV27(Link6, { to: "/portfolio", children: /* @__PURE__ */ jsxDEV27(
         Button3,
         {
           colorScheme: "purple",
@@ -3464,26 +3414,26 @@ var IntroSection = (props) => /* @__PURE__ */ jsxDEV28(
 // app/features/home/PortfolioSection.tsx
 import { Box as Box16, Flex as Flex11 } from "@chakra-ui/react";
 import { forwardRef as forwardRef2 } from "react";
-import { jsxDEV as jsxDEV29 } from "react/jsx-dev-runtime";
+import { jsxDEV as jsxDEV28 } from "react/jsx-dev-runtime";
 var PortfolioSection = forwardRef2(
-  (props, ref) => /* @__PURE__ */ jsxDEV29(Box16, { as: "section", ref, ...props, children: [
-    /* @__PURE__ */ jsxDEV29(SectionHeading, { children: "Portfolio" }, void 0, !1, {
+  (props, ref) => /* @__PURE__ */ jsxDEV28(Box16, { as: "section", ref, ...props, children: [
+    /* @__PURE__ */ jsxDEV28(SectionHeading, { children: "Portfolio" }, void 0, !1, {
       fileName: "app/features/home/PortfolioSection.tsx",
       lineNumber: 11,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ jsxDEV29(HomeBodyText, { children: "Here is just some of the cool projects I've worked on" }, void 0, !1, {
+    /* @__PURE__ */ jsxDEV28(HomeBodyText, { children: "Here is just some of the cool projects I've worked on" }, void 0, !1, {
       fileName: "app/features/home/PortfolioSection.tsx",
       lineNumber: 12,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ jsxDEV29(
+    /* @__PURE__ */ jsxDEV28(
       Flex11,
       {
         flexDir: "row",
         flexWrap: "wrap",
         justifyContent: { base: "center", lg: "left" },
-        children: PORTFOLIO_ITEMS.map((item) => /* @__PURE__ */ jsxDEV29(PortfolioCard, { ...item }, item.title, !1, {
+        children: PORTFOLIO_ITEMS.map((item) => /* @__PURE__ */ jsxDEV28(PortfolioCard, { ...item }, item.title, !1, {
           fileName: "app/features/home/PortfolioSection.tsx",
           lineNumber: 21,
           columnNumber: 11
@@ -3515,20 +3465,20 @@ import {
   Heading as Heading8,
   Icon as Icon8,
   Stack as Stack5,
-  Text as Text10,
+  Text as Text9,
   useColorModeValue as useColorModeValue17
 } from "@chakra-ui/react";
 import { MdWork as MdWork3 } from "react-icons/md";
-import { jsxDEV as jsxDEV30 } from "react/jsx-dev-runtime";
+import { jsxDEV as jsxDEV29 } from "react/jsx-dev-runtime";
 var WorkExperienceSection = () => {
   let cardBg = useColorModeValue17("white", "gray.800"), borderColor = useColorModeValue17("purple.100", "purple.700"), iconBg = useColorModeValue17("purple.50", "purple.900"), iconColor = useColorModeValue17("purple.500", "purple.200"), dateColor = useColorModeValue17("gray.600", "gray.400");
-  return /* @__PURE__ */ jsxDEV30(Box17, { w: "100%", children: [
-    /* @__PURE__ */ jsxDEV30(SectionHeading, { children: "Work Experience" }, void 0, !1, {
+  return /* @__PURE__ */ jsxDEV29(Box17, { w: "100%", children: [
+    /* @__PURE__ */ jsxDEV29(SectionHeading, { children: "Work Experience" }, void 0, !1, {
       fileName: "app/features/home/WorkExperienceSection.tsx",
       lineNumber: 26,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ jsxDEV30(Stack5, { spacing: 4, mt: 6, children: WORK_EXPERIENCE_DATA.map((experience, index) => /* @__PURE__ */ jsxDEV30(
+    /* @__PURE__ */ jsxDEV29(Stack5, { spacing: 4, mt: 6, children: WORK_EXPERIENCE_DATA.map((experience, index) => /* @__PURE__ */ jsxDEV29(
       Card4,
       {
         bg: cardBg,
@@ -3543,14 +3493,14 @@ var WorkExperienceSection = () => {
           borderColor: useColorModeValue17("purple.300", "purple.500")
         },
         children: [
-          /* @__PURE__ */ jsxDEV30(CardHeader4, { pb: 2, children: /* @__PURE__ */ jsxDEV30(Flex12, { align: "center", gap: 4, children: [
-            /* @__PURE__ */ jsxDEV30(
+          /* @__PURE__ */ jsxDEV29(CardHeader4, { pb: 2, children: /* @__PURE__ */ jsxDEV29(Flex12, { align: "center", gap: 4, children: [
+            /* @__PURE__ */ jsxDEV29(
               Box17,
               {
                 p: 2,
                 borderRadius: "lg",
                 bg: iconBg,
-                children: /* @__PURE__ */ jsxDEV30(
+                children: /* @__PURE__ */ jsxDEV29(
                   Icon8,
                   {
                     as: MdWork3,
@@ -3576,8 +3526,8 @@ var WorkExperienceSection = () => {
               },
               this
             ),
-            /* @__PURE__ */ jsxDEV30(Box17, { children: [
-              /* @__PURE__ */ jsxDEV30(
+            /* @__PURE__ */ jsxDEV29(Box17, { children: [
+              /* @__PURE__ */ jsxDEV29(
                 Heading8,
                 {
                   size: "md",
@@ -3597,8 +3547,8 @@ var WorkExperienceSection = () => {
                 },
                 this
               ),
-              /* @__PURE__ */ jsxDEV30(
-                Text10,
+              /* @__PURE__ */ jsxDEV29(
+                Text9,
                 {
                   fontSize: "sm",
                   color: dateColor,
@@ -3628,8 +3578,8 @@ var WorkExperienceSection = () => {
             lineNumber: 43,
             columnNumber: 13
           }, this),
-          /* @__PURE__ */ jsxDEV30(CardBody4, { pt: 0, children: /* @__PURE__ */ jsxDEV30(
-            Text10,
+          /* @__PURE__ */ jsxDEV29(CardBody4, { pt: 0, children: /* @__PURE__ */ jsxDEV29(
+            Text9,
             {
               fontSize: "md",
               fontWeight: "medium",
@@ -3672,24 +3622,24 @@ var WorkExperienceSection = () => {
 };
 
 // app/routes/_index.tsx
-import { jsxDEV as jsxDEV31 } from "react/jsx-dev-runtime";
+import { jsxDEV as jsxDEV30 } from "react/jsx-dev-runtime";
 var Index = () => {
   let contactMeRef = useRef(null), { enterCount: contactMeEnterCount } = useInViewport(contactMeRef, {
     threshold: 0.5
   });
-  return /* @__PURE__ */ jsxDEV31(Container5, { maxW: "full", px: 0, children: /* @__PURE__ */ jsxDEV31(
+  return /* @__PURE__ */ jsxDEV30(Container5, { maxW: "full", px: 0, children: /* @__PURE__ */ jsxDEV30(
     VStack7,
     {
       spacing: { base: 10, md: 14 },
       pt: { base: "80px", md: "100px" },
       px: { base: 4, sm: 6, md: 8, lg: 10 },
       children: [
-        /* @__PURE__ */ jsxDEV31(IntroSection, {}, void 0, !1, {
+        /* @__PURE__ */ jsxDEV30(IntroSection, {}, void 0, !1, {
           fileName: "app/routes/_index.tsx",
           lineNumber: 24,
           columnNumber: 9
         }, this),
-        /* @__PURE__ */ jsxDEV31(Box18, { w: "full", px: { base: 2, md: 4 }, children: /* @__PURE__ */ jsxDEV31(AboutMeSection, {}, void 0, !1, {
+        /* @__PURE__ */ jsxDEV30(Box18, { w: "full", px: { base: 2, md: 4 }, children: /* @__PURE__ */ jsxDEV30(AboutMeSection, {}, void 0, !1, {
           fileName: "app/routes/_index.tsx",
           lineNumber: 27,
           columnNumber: 11
@@ -3698,14 +3648,14 @@ var Index = () => {
           lineNumber: 26,
           columnNumber: 9
         }, this),
-        /* @__PURE__ */ jsxDEV31(Box18, { w: "full", children: /* @__PURE__ */ jsxDEV31(
+        /* @__PURE__ */ jsxDEV30(Box18, { w: "full", children: /* @__PURE__ */ jsxDEV30(
           Flex13,
           {
             direction: { base: "column", lg: "row" },
             gap: { base: 8, lg: 12 },
             px: { base: 2, md: 4 },
             children: [
-              /* @__PURE__ */ jsxDEV31(Box18, { flex: "1", children: /* @__PURE__ */ jsxDEV31(WorkExperienceSection, {}, void 0, !1, {
+              /* @__PURE__ */ jsxDEV30(Box18, { flex: "1", children: /* @__PURE__ */ jsxDEV30(WorkExperienceSection, {}, void 0, !1, {
                 fileName: "app/routes/_index.tsx",
                 lineNumber: 37,
                 columnNumber: 15
@@ -3714,7 +3664,7 @@ var Index = () => {
                 lineNumber: 36,
                 columnNumber: 13
               }, this),
-              /* @__PURE__ */ jsxDEV31(Box18, { flex: "1", children: /* @__PURE__ */ jsxDEV31(AcademicSection, {}, void 0, !1, {
+              /* @__PURE__ */ jsxDEV30(Box18, { flex: "1", children: /* @__PURE__ */ jsxDEV30(AcademicSection, {}, void 0, !1, {
                 fileName: "app/routes/_index.tsx",
                 lineNumber: 40,
                 columnNumber: 15
@@ -3738,7 +3688,7 @@ var Index = () => {
           lineNumber: 30,
           columnNumber: 9
         }, this),
-        /* @__PURE__ */ jsxDEV31(Box18, { w: "full", px: { base: 2, md: 4 }, children: /* @__PURE__ */ jsxDEV31(PortfolioSection, {}, void 0, !1, {
+        /* @__PURE__ */ jsxDEV30(Box18, { w: "full", px: { base: 2, md: 4 }, children: /* @__PURE__ */ jsxDEV30(PortfolioSection, {}, void 0, !1, {
           fileName: "app/routes/_index.tsx",
           lineNumber: 46,
           columnNumber: 11
@@ -3747,7 +3697,7 @@ var Index = () => {
           lineNumber: 45,
           columnNumber: 9
         }, this),
-        /* @__PURE__ */ jsxDEV31(Box18, { w: "full", px: { base: 2, md: 4 }, pb: { base: 8, md: 10 }, children: /* @__PURE__ */ jsxDEV31(ContactMeSection, { ref: contactMeRef }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV30(Box18, { w: "full", px: { base: 2, md: 4 }, pb: { base: 8, md: 10 }, children: /* @__PURE__ */ jsxDEV30(ContactMeSection, { ref: contactMeRef }, void 0, !1, {
           fileName: "app/routes/_index.tsx",
           lineNumber: 50,
           columnNumber: 11
@@ -3774,7 +3724,7 @@ var Index = () => {
 }, index_default = Index;
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-DE2JL6VM.js", imports: ["/build/_shared/chunk-H2LOK4OR.js", "/build/_shared/chunk-F5BHF6F2.js", "/build/_shared/chunk-ACVXT7VY.js", "/build/_shared/chunk-S5NB2QQZ.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-CTMXZJKK.js", imports: ["/build/_shared/chunk-36WVHAX4.js", "/build/_shared/chunk-HX55Y547.js", "/build/_shared/chunk-F3LLVCX4.js", "/build/_shared/chunk-VLS5E2A2.js", "/build/_shared/chunk-U2FGD5UM.js", "/build/_shared/chunk-2AKUTJQ7.js", "/build/_shared/chunk-NMZL6IDN.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-WUBOR5MI.js", imports: ["/build/_shared/chunk-WPLKF6AP.js", "/build/_shared/chunk-IQHKTUZW.js", "/build/_shared/chunk-EFBJUPQZ.js", "/build/_shared/chunk-NW6Y7R7V.js", "/build/_shared/chunk-YD4IA2WW.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/aboutme": { id: "routes/aboutme", parentId: "root", path: "aboutme", index: void 0, caseSensitive: void 0, module: "/build/routes/aboutme-3WUYOUXJ.js", imports: ["/build/_shared/chunk-Q2MTDVLK.js", "/build/_shared/chunk-YD4IA2WW.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/contact": { id: "routes/contact", parentId: "root", path: "contact", index: void 0, caseSensitive: void 0, module: "/build/routes/contact-257NRK4V.js", imports: ["/build/_shared/chunk-Q2MTDVLK.js", "/build/_shared/chunk-EFBJUPQZ.js", "/build/_shared/chunk-NW6Y7R7V.js", "/build/_shared/chunk-YD4IA2WW.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/experience": { id: "routes/experience", parentId: "root", path: "experience", index: void 0, caseSensitive: void 0, module: "/build/routes/experience-2DB6W7XJ.js", imports: ["/build/_shared/chunk-Q2MTDVLK.js", "/build/_shared/chunk-WPLKF6AP.js", "/build/_shared/chunk-YD4IA2WW.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/portfolio": { id: "routes/portfolio", parentId: "root", path: "portfolio", index: void 0, caseSensitive: void 0, module: "/build/routes/portfolio-TRDUJOTN.js", imports: ["/build/_shared/chunk-Q2MTDVLK.js", "/build/_shared/chunk-IQHKTUZW.js", "/build/_shared/chunk-NW6Y7R7V.js", "/build/_shared/chunk-YD4IA2WW.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/technology": { id: "routes/technology", parentId: "root", path: "technology", index: void 0, caseSensitive: void 0, module: "/build/routes/technology-PWB35PNI.js", imports: ["/build/_shared/chunk-Q2MTDVLK.js", "/build/_shared/chunk-YD4IA2WW.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 } }, version: "efbff02b", hmr: { runtime: "/build/_shared\\chunk-S5NB2QQZ.js", timestamp: 1744812475742 }, url: "/build/manifest-EFBFF02B.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-SKT63VDN.js", imports: ["/build/_shared/chunk-H2LOK4OR.js", "/build/_shared/chunk-F5BHF6F2.js", "/build/_shared/chunk-ACVXT7VY.js", "/build/_shared/chunk-S5NB2QQZ.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-SLEF6UYJ.js", imports: ["/build/_shared/chunk-36WVHAX4.js", "/build/_shared/chunk-HX55Y547.js", "/build/_shared/chunk-F3LLVCX4.js", "/build/_shared/chunk-VLS5E2A2.js", "/build/_shared/chunk-U2FGD5UM.js", "/build/_shared/chunk-2AKUTJQ7.js", "/build/_shared/chunk-NMZL6IDN.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-2NVVFYFP.js", imports: ["/build/_shared/chunk-WPLKF6AP.js", "/build/_shared/chunk-IQHKTUZW.js", "/build/_shared/chunk-EFBJUPQZ.js", "/build/_shared/chunk-NW6Y7R7V.js", "/build/_shared/chunk-YD4IA2WW.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/contact": { id: "routes/contact", parentId: "root", path: "contact", index: void 0, caseSensitive: void 0, module: "/build/routes/contact-NZROZJGQ.js", imports: ["/build/_shared/chunk-Q2MTDVLK.js", "/build/_shared/chunk-EFBJUPQZ.js", "/build/_shared/chunk-NW6Y7R7V.js", "/build/_shared/chunk-YD4IA2WW.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/experience": { id: "routes/experience", parentId: "root", path: "experience", index: void 0, caseSensitive: void 0, module: "/build/routes/experience-HFSSMTTE.js", imports: ["/build/_shared/chunk-Q2MTDVLK.js", "/build/_shared/chunk-WPLKF6AP.js", "/build/_shared/chunk-YD4IA2WW.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/portfolio": { id: "routes/portfolio", parentId: "root", path: "portfolio", index: void 0, caseSensitive: void 0, module: "/build/routes/portfolio-OEQQ4UXD.js", imports: ["/build/_shared/chunk-Q2MTDVLK.js", "/build/_shared/chunk-IQHKTUZW.js", "/build/_shared/chunk-NW6Y7R7V.js", "/build/_shared/chunk-YD4IA2WW.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/technology": { id: "routes/technology", parentId: "root", path: "technology", index: void 0, caseSensitive: void 0, module: "/build/routes/technology-LGTX7W7F.js", imports: ["/build/_shared/chunk-Q2MTDVLK.js", "/build/_shared/chunk-YD4IA2WW.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 } }, version: "4fdd2fe6", hmr: { runtime: "/build/_shared\\chunk-S5NB2QQZ.js", timestamp: 1747056064290 }, url: "/build/manifest-4FDD2FE6.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var mode3 = "development", assetsBuildDirectory = "public/build", future = { v3_fetcherPersist: !1, v3_relativeSplatPath: !1 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {
@@ -3809,14 +3759,6 @@ var mode3 = "development", assetsBuildDirectory = "public/build", future = { v3_
     index: void 0,
     caseSensitive: void 0,
     module: portfolio_exports
-  },
-  "routes/aboutme": {
-    id: "routes/aboutme",
-    parentId: "root",
-    path: "aboutme",
-    index: void 0,
-    caseSensitive: void 0,
-    module: aboutme_exports
   },
   "routes/contact": {
     id: "routes/contact",
