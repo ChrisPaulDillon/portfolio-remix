@@ -1239,7 +1239,16 @@ var WORK_EXPERIENCE_DATA = [
       "Implemented CI/CD pipelines reducing deployment time by 40%",
       "Mentored junior developers and conducted technical interviews"
     ],
-    technologies: ["C#", ".NET Core", "React", "TypeScript", "Azure", "Docker"]
+    technologies: [
+      "C#",
+      ".NET",
+      "Go",
+      "React",
+      "TypeScript",
+      "Next.js",
+      "Azure",
+      "Docker"
+    ]
   },
   {
     companyName: "Serial Affinity",
@@ -1248,11 +1257,18 @@ var WORK_EXPERIENCE_DATA = [
     date: "March 2020 - June 2023",
     responsibilities: [
       "Developed full-stack features using React and .NET Core",
-      "Optimized database performance reducing query times by 60%",
       "Implemented real-time data synchronization using SignalR",
       "Contributed to architecture decisions and technical documentation"
     ],
-    technologies: ["C#", ".NET Core", "React", "SQL Server", "Redis", "TypeScript"]
+    technologies: [
+      "C#",
+      ".NET",
+      "React",
+      "TypeScript",
+      "Next.js",
+      "Azure",
+      "Docker"
+    ]
   },
   {
     companyName: "My1Login",
@@ -3724,7 +3740,7 @@ var Index = () => {
 }, index_default = Index;
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-SKT63VDN.js", imports: ["/build/_shared/chunk-H2LOK4OR.js", "/build/_shared/chunk-F5BHF6F2.js", "/build/_shared/chunk-ACVXT7VY.js", "/build/_shared/chunk-S5NB2QQZ.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-SLEF6UYJ.js", imports: ["/build/_shared/chunk-36WVHAX4.js", "/build/_shared/chunk-HX55Y547.js", "/build/_shared/chunk-F3LLVCX4.js", "/build/_shared/chunk-VLS5E2A2.js", "/build/_shared/chunk-U2FGD5UM.js", "/build/_shared/chunk-2AKUTJQ7.js", "/build/_shared/chunk-NMZL6IDN.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-2NVVFYFP.js", imports: ["/build/_shared/chunk-WPLKF6AP.js", "/build/_shared/chunk-IQHKTUZW.js", "/build/_shared/chunk-EFBJUPQZ.js", "/build/_shared/chunk-NW6Y7R7V.js", "/build/_shared/chunk-YD4IA2WW.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/contact": { id: "routes/contact", parentId: "root", path: "contact", index: void 0, caseSensitive: void 0, module: "/build/routes/contact-NZROZJGQ.js", imports: ["/build/_shared/chunk-Q2MTDVLK.js", "/build/_shared/chunk-EFBJUPQZ.js", "/build/_shared/chunk-NW6Y7R7V.js", "/build/_shared/chunk-YD4IA2WW.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/experience": { id: "routes/experience", parentId: "root", path: "experience", index: void 0, caseSensitive: void 0, module: "/build/routes/experience-HFSSMTTE.js", imports: ["/build/_shared/chunk-Q2MTDVLK.js", "/build/_shared/chunk-WPLKF6AP.js", "/build/_shared/chunk-YD4IA2WW.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/portfolio": { id: "routes/portfolio", parentId: "root", path: "portfolio", index: void 0, caseSensitive: void 0, module: "/build/routes/portfolio-OEQQ4UXD.js", imports: ["/build/_shared/chunk-Q2MTDVLK.js", "/build/_shared/chunk-IQHKTUZW.js", "/build/_shared/chunk-NW6Y7R7V.js", "/build/_shared/chunk-YD4IA2WW.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/technology": { id: "routes/technology", parentId: "root", path: "technology", index: void 0, caseSensitive: void 0, module: "/build/routes/technology-LGTX7W7F.js", imports: ["/build/_shared/chunk-Q2MTDVLK.js", "/build/_shared/chunk-YD4IA2WW.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 } }, version: "4fdd2fe6", hmr: { runtime: "/build/_shared\\chunk-S5NB2QQZ.js", timestamp: 1747056064290 }, url: "/build/manifest-4FDD2FE6.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-SKT63VDN.js", imports: ["/build/_shared/chunk-H2LOK4OR.js", "/build/_shared/chunk-F5BHF6F2.js", "/build/_shared/chunk-ACVXT7VY.js", "/build/_shared/chunk-S5NB2QQZ.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-SLEF6UYJ.js", imports: ["/build/_shared/chunk-36WVHAX4.js", "/build/_shared/chunk-HX55Y547.js", "/build/_shared/chunk-F3LLVCX4.js", "/build/_shared/chunk-VLS5E2A2.js", "/build/_shared/chunk-U2FGD5UM.js", "/build/_shared/chunk-2AKUTJQ7.js", "/build/_shared/chunk-NMZL6IDN.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-DYEBYWJ4.js", imports: ["/build/_shared/chunk-YAS4JAKK.js", "/build/_shared/chunk-IQHKTUZW.js", "/build/_shared/chunk-EFBJUPQZ.js", "/build/_shared/chunk-NW6Y7R7V.js", "/build/_shared/chunk-YD4IA2WW.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/contact": { id: "routes/contact", parentId: "root", path: "contact", index: void 0, caseSensitive: void 0, module: "/build/routes/contact-NZROZJGQ.js", imports: ["/build/_shared/chunk-Q2MTDVLK.js", "/build/_shared/chunk-EFBJUPQZ.js", "/build/_shared/chunk-NW6Y7R7V.js", "/build/_shared/chunk-YD4IA2WW.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/experience": { id: "routes/experience", parentId: "root", path: "experience", index: void 0, caseSensitive: void 0, module: "/build/routes/experience-THF6UVY3.js", imports: ["/build/_shared/chunk-Q2MTDVLK.js", "/build/_shared/chunk-YAS4JAKK.js", "/build/_shared/chunk-YD4IA2WW.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/portfolio": { id: "routes/portfolio", parentId: "root", path: "portfolio", index: void 0, caseSensitive: void 0, module: "/build/routes/portfolio-OEQQ4UXD.js", imports: ["/build/_shared/chunk-Q2MTDVLK.js", "/build/_shared/chunk-IQHKTUZW.js", "/build/_shared/chunk-NW6Y7R7V.js", "/build/_shared/chunk-YD4IA2WW.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/technology": { id: "routes/technology", parentId: "root", path: "technology", index: void 0, caseSensitive: void 0, module: "/build/routes/technology-LGTX7W7F.js", imports: ["/build/_shared/chunk-Q2MTDVLK.js", "/build/_shared/chunk-YD4IA2WW.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 } }, version: "9768d979", hmr: { runtime: "/build/_shared\\chunk-S5NB2QQZ.js", timestamp: 1747056180015 }, url: "/build/manifest-9768D979.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var mode3 = "development", assetsBuildDirectory = "public/build", future = { v3_fetcherPersist: !1, v3_relativeSplatPath: !1 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {

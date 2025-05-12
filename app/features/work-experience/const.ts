@@ -11,7 +11,8 @@ export const WORK_EXPERIENCE_DATA: WorkExperienceData[] = [
   {
     companyName: 'Serial Affinity',
     role: 'Senior Full Stack Engineer',
-    description: 'Leading development of enterprise-scale web applications and mentoring junior developers.',
+    description:
+      'Leading development of enterprise-scale web applications and mentoring junior developers.',
     date: 'June 2023 - Present',
     responsibilities: [
       'Architected and implemented scalable microservices using .NET Core and React',
@@ -19,20 +20,37 @@ export const WORK_EXPERIENCE_DATA: WorkExperienceData[] = [
       'Implemented CI/CD pipelines reducing deployment time by 40%',
       'Mentored junior developers and conducted technical interviews'
     ],
-    technologies: ['C#', '.NET Core', 'React', 'TypeScript', 'Azure', 'Docker']
+    technologies: [
+      'C#',
+      '.NET',
+      'Go',
+      'React',
+      'TypeScript',
+      'Next.js',
+      'Azure',
+      'Docker'
+    ]
   },
   {
     companyName: 'Serial Affinity',
     role: 'Full Stack Engineer',
-    description: 'Developed and maintained complex web applications using modern technologies.',
+    description:
+      'Developed and maintained complex web applications using modern technologies.',
     date: 'March 2020 - June 2023',
     responsibilities: [
       'Developed full-stack features using React and .NET Core',
-      'Optimized database performance reducing query times by 60%',
       'Implemented real-time data synchronization using SignalR',
       'Contributed to architecture decisions and technical documentation'
     ],
-    technologies: ['C#', '.NET Core', 'React', 'SQL Server', 'Redis', 'TypeScript']
+    technologies: [
+      'C#',
+      '.NET',
+      'React',
+      'TypeScript',
+      'Next.js',
+      'Azure',
+      'Docker'
+    ]
   },
   {
     companyName: 'My1Login',
