@@ -3346,7 +3346,7 @@ var IntroSection = (props) => /* @__PURE__ */ jsxDEV27(
           textAlign: { base: "center", lg: "left" },
           maxW: { base: "full", md: "600px" },
           color: useColorModeValue16("gray.600", "gray.400"),
-          children: "I'm a software engineer specializing in building (and occasionally designing) exceptional digital experiences."
+          children: "I'm a Senior Software Engineer specialising in building exceptional digital experiences and bringing products to scale."
         },
         void 0,
         !1,
@@ -3366,27 +3366,40 @@ var IntroSection = (props) => /* @__PURE__ */ jsxDEV27(
           justify: { base: "center", lg: "flex-start" },
           align: "center",
           mt: { base: 4, md: 6 },
-          children: /* @__PURE__ */ jsxDEV27(Box15, { display: "flex", gap: 2, flexWrap: "wrap", justifyContent: { base: "center", lg: "flex-start" }, children: [
-            /* @__PURE__ */ jsxDEV27(ProgrammingCard, { label: "C#" }, void 0, !1, {
+          children: /* @__PURE__ */ jsxDEV27(
+            Box15,
+            {
+              display: "flex",
+              gap: 2,
+              flexWrap: "wrap",
+              justifyContent: { base: "center", lg: "flex-start" },
+              children: [
+                /* @__PURE__ */ jsxDEV27(ProgrammingCard, { label: "C#" }, void 0, !1, {
+                  fileName: "app/features/home/IntroSection.tsx",
+                  lineNumber: 71,
+                  columnNumber: 9
+                }, this),
+                /* @__PURE__ */ jsxDEV27(ProgrammingCard, { label: "TypeScript" }, void 0, !1, {
+                  fileName: "app/features/home/IntroSection.tsx",
+                  lineNumber: 72,
+                  columnNumber: 9
+                }, this),
+                /* @__PURE__ */ jsxDEV27(ProgrammingCard, { label: "React" }, void 0, !1, {
+                  fileName: "app/features/home/IntroSection.tsx",
+                  lineNumber: 73,
+                  columnNumber: 9
+                }, this)
+              ]
+            },
+            void 0,
+            !0,
+            {
               fileName: "app/features/home/IntroSection.tsx",
-              lineNumber: 66,
-              columnNumber: 9
-            }, this),
-            /* @__PURE__ */ jsxDEV27(ProgrammingCard, { label: "TypeScript" }, void 0, !1, {
-              fileName: "app/features/home/IntroSection.tsx",
-              lineNumber: 67,
-              columnNumber: 9
-            }, this),
-            /* @__PURE__ */ jsxDEV27(ProgrammingCard, { label: "React" }, void 0, !1, {
-              fileName: "app/features/home/IntroSection.tsx",
-              lineNumber: 68,
-              columnNumber: 9
-            }, this)
-          ] }, void 0, !0, {
-            fileName: "app/features/home/IntroSection.tsx",
-            lineNumber: 65,
-            columnNumber: 7
-          }, this)
+              lineNumber: 65,
+              columnNumber: 7
+            },
+            this
+          )
         },
         void 0,
         !1,
@@ -3397,37 +3410,49 @@ var IntroSection = (props) => /* @__PURE__ */ jsxDEV27(
         },
         this
       ),
-      /* @__PURE__ */ jsxDEV27(Box15, { w: "full", pt: { base: 4, md: 6 }, textAlign: { base: "center", lg: "left" }, children: /* @__PURE__ */ jsxDEV27(Link6, { to: "/portfolio", children: /* @__PURE__ */ jsxDEV27(
-        Button3,
+      /* @__PURE__ */ jsxDEV27(
+        Box15,
         {
-          colorScheme: "purple",
-          size: { base: "md", md: "lg" },
-          px: { base: 6, md: 8 },
-          fontSize: { base: "sm", md: "md" },
-          _hover: {
-            transform: "translateY(-2px)",
-            boxShadow: "lg"
-          },
-          transition: "all 0.3s",
-          children: "View My Portfolio"
+          w: "full",
+          pt: { base: 4, md: 6 },
+          textAlign: { base: "center", lg: "left" },
+          children: /* @__PURE__ */ jsxDEV27(Link6, { to: "/portfolio", children: /* @__PURE__ */ jsxDEV27(
+            Button3,
+            {
+              colorScheme: "purple",
+              size: { base: "md", md: "lg" },
+              px: { base: 6, md: 8 },
+              fontSize: { base: "sm", md: "md" },
+              _hover: {
+                transform: "translateY(-2px)",
+                boxShadow: "lg"
+              },
+              transition: "all 0.3s",
+              children: "View My Portfolio"
+            },
+            void 0,
+            !1,
+            {
+              fileName: "app/features/home/IntroSection.tsx",
+              lineNumber: 83,
+              columnNumber: 9
+            },
+            this
+          ) }, void 0, !1, {
+            fileName: "app/features/home/IntroSection.tsx",
+            lineNumber: 82,
+            columnNumber: 7
+          }, this)
         },
         void 0,
         !1,
         {
           fileName: "app/features/home/IntroSection.tsx",
-          lineNumber: 74,
-          columnNumber: 9
+          lineNumber: 77,
+          columnNumber: 5
         },
         this
-      ) }, void 0, !1, {
-        fileName: "app/features/home/IntroSection.tsx",
-        lineNumber: 73,
-        columnNumber: 7
-      }, this) }, void 0, !1, {
-        fileName: "app/features/home/IntroSection.tsx",
-        lineNumber: 72,
-        columnNumber: 5
-      }, this)
+      )
     ]
   },
   void 0,
@@ -3753,7 +3778,7 @@ var Index = () => {
 }, index_default = Index;
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-SKT63VDN.js", imports: ["/build/_shared/chunk-H2LOK4OR.js", "/build/_shared/chunk-F5BHF6F2.js", "/build/_shared/chunk-ACVXT7VY.js", "/build/_shared/chunk-S5NB2QQZ.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-SLEF6UYJ.js", imports: ["/build/_shared/chunk-36WVHAX4.js", "/build/_shared/chunk-HX55Y547.js", "/build/_shared/chunk-F3LLVCX4.js", "/build/_shared/chunk-VLS5E2A2.js", "/build/_shared/chunk-U2FGD5UM.js", "/build/_shared/chunk-2AKUTJQ7.js", "/build/_shared/chunk-NMZL6IDN.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-QXCOFMOC.js", imports: ["/build/_shared/chunk-YAS4JAKK.js", "/build/_shared/chunk-J6WISGU3.js", "/build/_shared/chunk-EFBJUPQZ.js", "/build/_shared/chunk-NW6Y7R7V.js", "/build/_shared/chunk-YD4IA2WW.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/contact": { id: "routes/contact", parentId: "root", path: "contact", index: void 0, caseSensitive: void 0, module: "/build/routes/contact-NZROZJGQ.js", imports: ["/build/_shared/chunk-Q2MTDVLK.js", "/build/_shared/chunk-EFBJUPQZ.js", "/build/_shared/chunk-NW6Y7R7V.js", "/build/_shared/chunk-YD4IA2WW.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/experience": { id: "routes/experience", parentId: "root", path: "experience", index: void 0, caseSensitive: void 0, module: "/build/routes/experience-THF6UVY3.js", imports: ["/build/_shared/chunk-Q2MTDVLK.js", "/build/_shared/chunk-YAS4JAKK.js", "/build/_shared/chunk-YD4IA2WW.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/portfolio": { id: "routes/portfolio", parentId: "root", path: "portfolio", index: void 0, caseSensitive: void 0, module: "/build/routes/portfolio-FJJVXYKM.js", imports: ["/build/_shared/chunk-Q2MTDVLK.js", "/build/_shared/chunk-J6WISGU3.js", "/build/_shared/chunk-NW6Y7R7V.js", "/build/_shared/chunk-YD4IA2WW.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/technology": { id: "routes/technology", parentId: "root", path: "technology", index: void 0, caseSensitive: void 0, module: "/build/routes/technology-LGTX7W7F.js", imports: ["/build/_shared/chunk-Q2MTDVLK.js", "/build/_shared/chunk-YD4IA2WW.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 } }, version: "d2c7405f", hmr: { runtime: "/build/_shared\\chunk-S5NB2QQZ.js", timestamp: 1747124356929 }, url: "/build/manifest-D2C7405F.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-SKT63VDN.js", imports: ["/build/_shared/chunk-H2LOK4OR.js", "/build/_shared/chunk-F5BHF6F2.js", "/build/_shared/chunk-ACVXT7VY.js", "/build/_shared/chunk-S5NB2QQZ.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-SLEF6UYJ.js", imports: ["/build/_shared/chunk-36WVHAX4.js", "/build/_shared/chunk-HX55Y547.js", "/build/_shared/chunk-F3LLVCX4.js", "/build/_shared/chunk-VLS5E2A2.js", "/build/_shared/chunk-U2FGD5UM.js", "/build/_shared/chunk-2AKUTJQ7.js", "/build/_shared/chunk-NMZL6IDN.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-NIHJZMZL.js", imports: ["/build/_shared/chunk-YAS4JAKK.js", "/build/_shared/chunk-J6WISGU3.js", "/build/_shared/chunk-EFBJUPQZ.js", "/build/_shared/chunk-NW6Y7R7V.js", "/build/_shared/chunk-YD4IA2WW.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/contact": { id: "routes/contact", parentId: "root", path: "contact", index: void 0, caseSensitive: void 0, module: "/build/routes/contact-NZROZJGQ.js", imports: ["/build/_shared/chunk-Q2MTDVLK.js", "/build/_shared/chunk-EFBJUPQZ.js", "/build/_shared/chunk-NW6Y7R7V.js", "/build/_shared/chunk-YD4IA2WW.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/experience": { id: "routes/experience", parentId: "root", path: "experience", index: void 0, caseSensitive: void 0, module: "/build/routes/experience-THF6UVY3.js", imports: ["/build/_shared/chunk-Q2MTDVLK.js", "/build/_shared/chunk-YAS4JAKK.js", "/build/_shared/chunk-YD4IA2WW.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/portfolio": { id: "routes/portfolio", parentId: "root", path: "portfolio", index: void 0, caseSensitive: void 0, module: "/build/routes/portfolio-FJJVXYKM.js", imports: ["/build/_shared/chunk-Q2MTDVLK.js", "/build/_shared/chunk-J6WISGU3.js", "/build/_shared/chunk-NW6Y7R7V.js", "/build/_shared/chunk-YD4IA2WW.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/technology": { id: "routes/technology", parentId: "root", path: "technology", index: void 0, caseSensitive: void 0, module: "/build/routes/technology-LGTX7W7F.js", imports: ["/build/_shared/chunk-Q2MTDVLK.js", "/build/_shared/chunk-YD4IA2WW.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 } }, version: "8ed2077c", hmr: { runtime: "/build/_shared\\chunk-S5NB2QQZ.js", timestamp: 1747124519406 }, url: "/build/manifest-8ED2077C.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var mode3 = "development", assetsBuildDirectory = "public/build", future = { v3_fetcherPersist: !1, v3_relativeSplatPath: !1 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {

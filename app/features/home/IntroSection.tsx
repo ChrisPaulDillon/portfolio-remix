@@ -50,8 +50,8 @@ export const IntroSection: React.FC<StackProps> = props => (
       maxW={{ base: 'full', md: '600px' }}
       color={useColorModeValue('gray.600', 'gray.400')}
     >
-      I&apos;m a software engineer specializing in building (and occasionally
-      designing) exceptional digital experiences.
+      I&apos;m a Senior Software Engineer specialising in building exceptional
+      digital experiences and bringing products to scale.
     </HomeBodyText>
 
     <Flex
@@ -62,14 +62,23 @@ export const IntroSection: React.FC<StackProps> = props => (
       align="center"
       mt={{ base: 4, md: 6 }}
     >
-      <Box display="flex" gap={2} flexWrap="wrap" justifyContent={{ base: 'center', lg: 'flex-start' }}>
+      <Box
+        display="flex"
+        gap={2}
+        flexWrap="wrap"
+        justifyContent={{ base: 'center', lg: 'flex-start' }}
+      >
         <ProgrammingCard label="C#" />
         <ProgrammingCard label="TypeScript" />
         <ProgrammingCard label="React" />
       </Box>
     </Flex>
 
-    <Box w="full" pt={{ base: 4, md: 6 }} textAlign={{ base: 'center', lg: 'left' }}>
+    <Box
+      w="full"
+      pt={{ base: 4, md: 6 }}
+      textAlign={{ base: 'center', lg: 'left' }}
+    >
       <Link to="/portfolio">
         <Button
           colorScheme="purple"
@@ -78,7 +87,7 @@ export const IntroSection: React.FC<StackProps> = props => (
           fontSize={{ base: 'sm', md: 'md' }}
           _hover={{
             transform: 'translateY(-2px)',
-            boxShadow: 'lg',
+            boxShadow: 'lg'
           }}
           transition="all 0.3s"
         >
