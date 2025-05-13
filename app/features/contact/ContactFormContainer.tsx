@@ -39,16 +39,19 @@ export const ContactFormContainer = () => {
       borderColor={borderColor}
       _hover={{ borderColor: hoverBorderColor }}
       transition="all 0.3s"
+      role="form"
+      aria-label="Contact form"
     >
       <form onSubmit={handleSubmit(handleFormSubmit)}>
         <VStack spacing={5}>
           <FormControl isRequired>
-            <FormLabel fontSize="lg" fontWeight="medium">Your Name</FormLabel>
+            <FormLabel fontSize="lg" fontWeight="medium" htmlFor="name">Your Name</FormLabel>
             <InputGroup>
               <InputLeftElement pointerEvents="none">
-                <BsPerson color="gray.800" />
+                <BsPerson aria-hidden="true" />
               </InputLeftElement>
               <Input
+                id="name"
                 type="text"
                 placeholder="John Doe"
                 bg={inputBg}
@@ -56,18 +59,25 @@ export const ContactFormContainer = () => {
                 size="lg"
                 _hover={{ borderColor: hoverBorderColor }}
                 _focus={{ borderColor: hoverBorderColor, boxShadow: 'outline' }}
-                {...register('name', { required: true })}
+                {...register('name', { required: 'Name is required' })}
+                aria-describedby={errors.name ? 'name-error' : undefined}
               />
             </InputGroup>
+            {errors.name && (
+              <span id="name-error" role="alert" style={{color: 'red'}}>
+                {errors.name.message as string}
+              </span>
+            )}
           </FormControl>
 
           <FormControl isRequired>
-            <FormLabel fontSize="lg" fontWeight="medium">Subject</FormLabel>
+            <FormLabel fontSize="lg" fontWeight="medium" htmlFor="subject">Subject</FormLabel>
             <InputGroup>
               <InputLeftElement pointerEvents="none">
-                <MdSubject color="gray.800" />
+                <MdSubject aria-hidden="true" />
               </InputLeftElement>
               <Input
+                id="subject"
                 type="text"
                 placeholder="What's this about?"
                 bg={inputBg}
@@ -75,14 +85,21 @@ export const ContactFormContainer = () => {
                 size="lg"
                 _hover={{ borderColor: hoverBorderColor }}
                 _focus={{ borderColor: hoverBorderColor, boxShadow: 'outline' }}
-                {...register('subject', { required: true })}
+                {...register('subject', { required: 'Subject is required' })}
+                aria-describedby={errors.subject ? 'subject-error' : undefined}
               />
             </InputGroup>
+            {errors.subject && (
+              <span id="subject-error" role="alert" style={{color: 'red'}}>
+                {errors.subject.message as string}
+              </span>
+            )}
           </FormControl>
 
           <FormControl isRequired>
-            <FormLabel fontSize="lg" fontWeight="medium">Message</FormLabel>
+            <FormLabel fontSize="lg" fontWeight="medium" htmlFor="body">Message</FormLabel>
             <Textarea
+              id="body"
               placeholder="Your message..."
               bg={inputBg}
               borderRadius="lg"
@@ -90,8 +107,14 @@ export const ContactFormContainer = () => {
               minH="200px"
               _hover={{ borderColor: hoverBorderColor }}
               _focus={{ borderColor: hoverBorderColor, boxShadow: 'outline' }}
-              {...register('body', { required: true })}
+              {...register('body', { required: 'Message is required' })}
+              aria-describedby={errors.body ? 'body-error' : undefined}
             />
+            {errors.body && (
+              <span id="body-error" role="alert" style={{color: 'red'}}>
+                {errors.body.message as string}
+              </span>
+            )}
           </FormControl>
 
           <Button
@@ -105,6 +128,7 @@ export const ContactFormContainer = () => {
               boxShadow: 'lg',
             }}
             transition="all 0.3s"
+            aria-label="Send message"
           >
             Send Message
           </Button>
