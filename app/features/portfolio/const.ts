@@ -15,6 +15,9 @@ export type ProjectCategories =
   | 'Data Analysis'
   | 'Redux'
   | 'Coingecko API'
+  | 'Shadcn'
+  | 'Next'
+  | 'Tailwind'
 
 export interface PortfolioLinkItem {
   linkUrl: string
@@ -24,6 +27,20 @@ export interface PortfolioLinkItem {
 export const PORTFOLIO_ITEMS: PortfolioCardProps[] = [
   {
     id: 1,
+    title: 'Chris Dillon Fitness',
+    description:
+      'A Personal Trainer website designed with the latest version of Next, App Router, Tailwind & Shadcn',
+    extendedDescription: '',
+    linkItems: [
+      {
+        linkText: 'Github',
+        linkUrl: 'https://github.com/ChrisPaulDillon/personal-trainer-app'
+      }
+    ],
+    categories: ['React', 'Shadcn', 'Next', 'Tailwind']
+  },
+  {
+    id: 2,
     title: 'ZumoSwap',
     description:
       'A singular token exchange designed to swap tokens and Ether in a decentralised manner.',
@@ -38,7 +55,7 @@ export const PORTFOLIO_ITEMS: PortfolioCardProps[] = [
     categories: ['Solidity', 'React', 'Web3', 'Ethers.js', 'Redux', 'Chakra UI']
   },
   {
-    id: 2,
+    id: 3,
     title: 'Crypto Trading Bot',
     description:
       'Polls various cryptocurrency exchanges and once a new coin listing has been announced, purchases on the GateIO exchange. Also announces on Discord.',
@@ -54,7 +71,7 @@ export const PORTFOLIO_ITEMS: PortfolioCardProps[] = [
     categories: ['C#', 'Discord API', 'Web Scraping']
   },
   {
-    id: 3,
+    id: 4,
     title: 'EVM Benchmarking',
     description:
       'Performance analysis of modern EVM implementations. This includes Cardanos novel KEVM implementation.',
@@ -69,7 +86,7 @@ export const PORTFOLIO_ITEMS: PortfolioCardProps[] = [
     categories: ['Python', 'Blockchain', 'EVM', 'Data Analysis']
   },
   {
-    id: 4,
+    id: 5,
     title: 'PowerBuddy',
     description:
       'Weightlifting tracker designed to automatically log personal bests and generate custom weightlifting templates based on the individuals criteria.',
@@ -88,7 +105,7 @@ export const PORTFOLIO_ITEMS: PortfolioCardProps[] = [
     categories: ['React', 'Redux', 'C#', 'Chakra UI']
   },
   {
-    id: 5,
+    id: 6,
     title: 'ImFeelingBullish.com',
     description:
       'Cryptocurrency aggregator used to automatically filter out potential high return crypto based on a multitude of data points.',

@@ -2134,6 +2134,19 @@ var PortfolioCard = ({
 var PORTFOLIO_ITEMS = [
   {
     id: 1,
+    title: "Chris Dillon Fitness",
+    description: "A Personal Trainer website designed with the latest version of Next, App Router, Tailwind & Shadcn",
+    extendedDescription: "",
+    linkItems: [
+      {
+        linkText: "Github",
+        linkUrl: "https://github.com/ChrisPaulDillon/personal-trainer-app"
+      }
+    ],
+    categories: ["React", "Shadcn", "Next", "Tailwind"]
+  },
+  {
+    id: 2,
     title: "ZumoSwap",
     description: "A singular token exchange designed to swap tokens and Ether in a decentralised manner.",
     extendedDescription: "ZumoSwap was a pilot project that allowed for swapping a token with ether on the Ethereum Testnet. Users can connect their wallet to the blockchain via a 3rd party such as MetaMask and interact with the blockchain through the Decentralised App (dApp). Built with Chakra UI, NextJs & Redux.",
@@ -2146,7 +2159,7 @@ var PORTFOLIO_ITEMS = [
     categories: ["Solidity", "React", "Web3", "Ethers.js", "Redux", "Chakra UI"]
   },
   {
-    id: 2,
+    id: 3,
     title: "Crypto Trading Bot",
     description: "Polls various cryptocurrency exchanges and once a new coin listing has been announced, purchases on the GateIO exchange. Also announces on Discord.",
     extendedDescription: "Cryptocurrency Bot which polls various exchanges (KuCoin, Binance) listening for changes in coin announcements. Once a new coin has been announced by the exchange, the bot will then proceed to buy the same token on the GateIo exchange and sell when it reaches a set percentage of profit. The coin listing is also announced on Discord.",
@@ -2159,7 +2172,7 @@ var PORTFOLIO_ITEMS = [
     categories: ["C#", "Discord API", "Web Scraping"]
   },
   {
-    id: 3,
+    id: 4,
     title: "EVM Benchmarking",
     description: "Performance analysis of modern EVM implementations. This includes Cardanos novel KEVM implementation.",
     extendedDescription: "This was part of my PhD research, investing the performance of different EVM client implementations. Factors such as the OS running the node client was also evaluated, with surprising results. Also includes a Big Data pipeline for automatically generating graph results using python.",
@@ -2172,7 +2185,7 @@ var PORTFOLIO_ITEMS = [
     categories: ["Python", "Blockchain", "EVM", "Data Analysis"]
   },
   {
-    id: 4,
+    id: 5,
     title: "PowerBuddy",
     description: "Weightlifting tracker designed to automatically log personal bests and generate custom weightlifting templates based on the individuals criteria.",
     extendedDescription: "Weightlifting tracker designed to automatically log personal bests and generate custom weightlifting templates based on the individuals criteria. Choose from popular powerlifting programme templates such as 5/3/1, Stronglifts 5x5, Russian Squat Routine and many more. Personal bests are automatically recorded, giving a historical timeline of your progress!",
@@ -2189,7 +2202,7 @@ var PORTFOLIO_ITEMS = [
     categories: ["React", "Redux", "C#", "Chakra UI"]
   },
   {
-    id: 5,
+    id: 6,
     title: "ImFeelingBullish.com",
     description: "Cryptocurrency aggregator used to automatically filter out potential high return crypto based on a multitude of data points.",
     extendedDescription: "Cryptocurrency aggregator used to automatically filter out potential high return crypto based on a multitude of data points. This project was designed to automatically filter out coins that were being manipulated in the market and provide additional information on tokens that had high return potential.",
@@ -3740,7 +3753,7 @@ var Index = () => {
 }, index_default = Index;
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-SKT63VDN.js", imports: ["/build/_shared/chunk-H2LOK4OR.js", "/build/_shared/chunk-F5BHF6F2.js", "/build/_shared/chunk-ACVXT7VY.js", "/build/_shared/chunk-S5NB2QQZ.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-SLEF6UYJ.js", imports: ["/build/_shared/chunk-36WVHAX4.js", "/build/_shared/chunk-HX55Y547.js", "/build/_shared/chunk-F3LLVCX4.js", "/build/_shared/chunk-VLS5E2A2.js", "/build/_shared/chunk-U2FGD5UM.js", "/build/_shared/chunk-2AKUTJQ7.js", "/build/_shared/chunk-NMZL6IDN.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-DYEBYWJ4.js", imports: ["/build/_shared/chunk-YAS4JAKK.js", "/build/_shared/chunk-IQHKTUZW.js", "/build/_shared/chunk-EFBJUPQZ.js", "/build/_shared/chunk-NW6Y7R7V.js", "/build/_shared/chunk-YD4IA2WW.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/contact": { id: "routes/contact", parentId: "root", path: "contact", index: void 0, caseSensitive: void 0, module: "/build/routes/contact-NZROZJGQ.js", imports: ["/build/_shared/chunk-Q2MTDVLK.js", "/build/_shared/chunk-EFBJUPQZ.js", "/build/_shared/chunk-NW6Y7R7V.js", "/build/_shared/chunk-YD4IA2WW.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/experience": { id: "routes/experience", parentId: "root", path: "experience", index: void 0, caseSensitive: void 0, module: "/build/routes/experience-THF6UVY3.js", imports: ["/build/_shared/chunk-Q2MTDVLK.js", "/build/_shared/chunk-YAS4JAKK.js", "/build/_shared/chunk-YD4IA2WW.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/portfolio": { id: "routes/portfolio", parentId: "root", path: "portfolio", index: void 0, caseSensitive: void 0, module: "/build/routes/portfolio-OEQQ4UXD.js", imports: ["/build/_shared/chunk-Q2MTDVLK.js", "/build/_shared/chunk-IQHKTUZW.js", "/build/_shared/chunk-NW6Y7R7V.js", "/build/_shared/chunk-YD4IA2WW.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/technology": { id: "routes/technology", parentId: "root", path: "technology", index: void 0, caseSensitive: void 0, module: "/build/routes/technology-LGTX7W7F.js", imports: ["/build/_shared/chunk-Q2MTDVLK.js", "/build/_shared/chunk-YD4IA2WW.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 } }, version: "9768d979", hmr: { runtime: "/build/_shared\\chunk-S5NB2QQZ.js", timestamp: 1747056180015 }, url: "/build/manifest-9768D979.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-SKT63VDN.js", imports: ["/build/_shared/chunk-H2LOK4OR.js", "/build/_shared/chunk-F5BHF6F2.js", "/build/_shared/chunk-ACVXT7VY.js", "/build/_shared/chunk-S5NB2QQZ.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-SLEF6UYJ.js", imports: ["/build/_shared/chunk-36WVHAX4.js", "/build/_shared/chunk-HX55Y547.js", "/build/_shared/chunk-F3LLVCX4.js", "/build/_shared/chunk-VLS5E2A2.js", "/build/_shared/chunk-U2FGD5UM.js", "/build/_shared/chunk-2AKUTJQ7.js", "/build/_shared/chunk-NMZL6IDN.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-QXCOFMOC.js", imports: ["/build/_shared/chunk-YAS4JAKK.js", "/build/_shared/chunk-J6WISGU3.js", "/build/_shared/chunk-EFBJUPQZ.js", "/build/_shared/chunk-NW6Y7R7V.js", "/build/_shared/chunk-YD4IA2WW.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/contact": { id: "routes/contact", parentId: "root", path: "contact", index: void 0, caseSensitive: void 0, module: "/build/routes/contact-NZROZJGQ.js", imports: ["/build/_shared/chunk-Q2MTDVLK.js", "/build/_shared/chunk-EFBJUPQZ.js", "/build/_shared/chunk-NW6Y7R7V.js", "/build/_shared/chunk-YD4IA2WW.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/experience": { id: "routes/experience", parentId: "root", path: "experience", index: void 0, caseSensitive: void 0, module: "/build/routes/experience-THF6UVY3.js", imports: ["/build/_shared/chunk-Q2MTDVLK.js", "/build/_shared/chunk-YAS4JAKK.js", "/build/_shared/chunk-YD4IA2WW.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/portfolio": { id: "routes/portfolio", parentId: "root", path: "portfolio", index: void 0, caseSensitive: void 0, module: "/build/routes/portfolio-FJJVXYKM.js", imports: ["/build/_shared/chunk-Q2MTDVLK.js", "/build/_shared/chunk-J6WISGU3.js", "/build/_shared/chunk-NW6Y7R7V.js", "/build/_shared/chunk-YD4IA2WW.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/technology": { id: "routes/technology", parentId: "root", path: "technology", index: void 0, caseSensitive: void 0, module: "/build/routes/technology-LGTX7W7F.js", imports: ["/build/_shared/chunk-Q2MTDVLK.js", "/build/_shared/chunk-YD4IA2WW.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 } }, version: "d2c7405f", hmr: { runtime: "/build/_shared\\chunk-S5NB2QQZ.js", timestamp: 1747124356929 }, url: "/build/manifest-D2C7405F.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var mode3 = "development", assetsBuildDirectory = "public/build", future = { v3_fetcherPersist: !1, v3_relativeSplatPath: !1 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {
