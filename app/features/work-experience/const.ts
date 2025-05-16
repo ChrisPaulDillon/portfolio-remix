@@ -56,7 +56,7 @@ export const WORK_EXPERIENCE_DATA: WorkExperienceData[] = [
     companyName: 'My1Login',
     role: 'Graduate Full Stack Engineer',
     description: 'Contributed to identity and access management solutions.',
-    date: 'September 2017 - March 2020',
+    date: 'September 2018 - March 2020',
     responsibilities: [
       'Developed secure authentication workflows',
       'Built responsive web interfaces using React',

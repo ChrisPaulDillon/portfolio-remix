@@ -17,17 +17,17 @@ const academicHistory = [
   {
     degree: 'MSc Big Data Technologies',
     institution: 'Glasgow Caledonian University',
-    date: '2016 - 2017'
+    date: '2017 - 2018'
   },
   {
     degree: 'BSc Computer Science',
     institution: 'Glasgow Caledonian University',
-    date: '2014 - 2016'
+    date: '2015 - 2017'
   },
   {
     degree: 'HND Software Development',
     institution: 'City of Glasgow College',
-    date: '2012 - 2014'
+    date: '2013 - 2015'
   }
 ]
 
@@ -37,7 +37,7 @@ export const AcademicSection = () => {
   const iconBg = useColorModeValue('red.50', 'red.900')
   const iconColor = useColorModeValue('red.500', 'red.200')
   const institutionColor = useColorModeValue('gray.600', 'gray.400')
-  
+
   return (
     <Box w="100%">
       <SectionHeading>Academic Achievements</SectionHeading>
@@ -59,16 +59,8 @@ export const AcademicSection = () => {
           >
             <CardHeader pb={2}>
               <Flex align="center" gap={4}>
-                <Box
-                  p={2}
-                  borderRadius="lg"
-                  bg={iconBg}
-                >
-                  <Icon 
-                    as={HiAcademicCap} 
-                    boxSize={5}
-                    color={iconColor}
-                  />
+                <Box p={2} borderRadius="lg" bg={iconBg}>
+                  <Icon as={HiAcademicCap} boxSize={5} color={iconColor} />
                 </Box>
                 <Box>
                   <Heading
@@ -81,11 +73,7 @@ export const AcademicSection = () => {
                   >
                     {education.degree}
                   </Heading>
-                  <Text
-                    fontSize="sm"
-                    color={institutionColor}
-                    mt={1}
-                  >
+                  <Text fontSize="sm" color={institutionColor} mt={1}>
                     {education.date}
                   </Text>
                 </Box>
