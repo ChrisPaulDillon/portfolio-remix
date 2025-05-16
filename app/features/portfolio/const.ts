@@ -27,7 +27,7 @@ export interface PortfolioLinkItem {
 export const PORTFOLIO_ITEMS: PortfolioCardProps[] = [
   {
     id: 1,
-    title: 'Chris Dillon Fitness',
+    title: 'Personal Trainer Site',
     description:
       'A Personal Trainer website designed with the latest version of Next, App Router, Tailwind & Shadcn',
     extendedDescription: '',
