@@ -13,7 +13,7 @@ export const WORK_EXPERIENCE_DATA: WorkExperienceData[] = [
     role: 'Senior Full Stack Engineer',
     description:
       'Leading development of enterprise-scale web applications and mentoring junior developers.',
-    date: 'June 2023 - Present',
+    date: 'December 2023 - Present',
     responsibilities: [
       'Architected and implemented scalable microservices using .NET Core and React',
       'Led technical design discussions and code reviews for team of 5 developers',
@@ -36,7 +36,7 @@ export const WORK_EXPERIENCE_DATA: WorkExperienceData[] = [
     role: 'Full Stack Engineer',
     description:
       'Developed and maintained complex web applications using modern technologies.',
-    date: 'March 2020 - June 2023',
+    date: 'March 2020 - December 2023',
     responsibilities: [
       'Developed full-stack features using React and .NET Core',
       'Implemented real-time data synchronization using SignalR',
